@@ -1,0 +1,68 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GCP 菜雞修煉場 – 故障排除測試</title>
+    <link>https://gcp-for-newbie.kejyun.com/tags/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4%E6%B8%AC%E8%A9%A6/</link>
+    <description>Recent content in 故障排除測試 on GCP 菜雞修煉場</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Mon, 03 May 2021 08:50:29 +0800</lastBuildDate>
+    
+	  <atom:link href="https://gcp-for-newbie.kejyun.com/tags/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4%E6%B8%AC%E8%A9%A6/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: 故障排除測試</title>
+      <link>https://gcp-for-newbie.kejyun.com/docs/google-compute-engine/auto-scaling/troubleshooting/</link>
+      <pubDate>Mon, 03 May 2021 08:50:29 +0800</pubDate>
+      
+      <guid>https://gcp-for-newbie.kejyun.com/docs/google-compute-engine/auto-scaling/troubleshooting/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;增加-cpu-使用量&#34;&gt;增加 CPU 使用量&lt;/h2&gt;
+&lt;p&gt;可以使用 &amp;ldquo;&lt;a href=&#34;https://gist.github.com/tott/3895832&#34;&gt;create cpu load in python&lt;/a&gt;&amp;rdquo; 這段程式碼，執行 python 程式增加 CPU 使用量&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ vim python-cpu.py
+&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#!/usr/bin/env python&lt;/span&gt;
+&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&amp;#34;&amp;#34;
+&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;Produces load on all available CPU cores
+&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&amp;#34;&amp;#34;&lt;/span&gt;
+
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;multiprocessing&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Pool&lt;/span&gt;
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;multiprocessing&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;cpu_count&lt;/span&gt;
+
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;f&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;x&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;):&lt;/span&gt;
+    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;while&lt;/span&gt; &lt;span style=&#34;color:#3465a4&#34;&gt;True&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;
+        &lt;span style=&#34;color:#000&#34;&gt;x&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;x&lt;/span&gt;
+
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;__name__&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;__main__&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;
+    &lt;span style=&#34;color:#000&#34;&gt;processes&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;cpu_count&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;print&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;utilizing &lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;%d&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt; cores&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;\n&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;%&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;processes&lt;/span&gt;
+    &lt;span style=&#34;color:#000&#34;&gt;pool&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Pool&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;processes&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# 設定背景執行&lt;/span&gt;
+$ python python-cpu.py &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;amp;&lt;/span&gt;
+&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;1&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;8843&lt;/span&gt;
+
+utilizing &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1&lt;/span&gt; cores
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;監控-cpu-使用狀態&#34;&gt;監控 CPU 使用狀態&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;$ sudo apt-get install htop
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;限制程序-cpu-執行上限&#34;&gt;限制程序 CPU 執行上限&lt;/h2&gt;
+&lt;p&gt;因為 &amp;ldquo;&lt;a href=&#34;https://gist.github.com/tott/3895832&#34;&gt;create cpu load in python&lt;/a&gt;&amp;rdquo; 會將所有 CPU 資源吃滿，可以用 &lt;code&gt;cpulimit&lt;/code&gt; 來控制程序的 CPU 執行上限&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;sudo apt-get install cpulimit
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# 限制指定程序 CPU 執行上限為 50 %&lt;/span&gt;
+$ cpulimit -p &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;8844&lt;/span&gt; -l &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;50&lt;/span&gt;
+Process &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;8844&lt;/span&gt; detected
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;參考資料&#34;&gt;參考資料&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=Gn7pGQYkKnA&#34;&gt;Google Cloud Load balancer &amp;amp; Autoscaling in ACTION!! (Udemy link below with discount code!) - YouTube&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

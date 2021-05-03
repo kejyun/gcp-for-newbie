@@ -1,0 +1,63 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GCP 菜雞修煉場 – Google Cloud MemoryStore</title>
+    <link>https://gcp-for-newbie.kejyun.com/tags/google-cloud-memorystore/</link>
+    <description>Recent content in Google Cloud MemoryStore on GCP 菜雞修煉場</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Mon, 03 May 2021 08:50:29 +0800</lastBuildDate>
+    
+	  <atom:link href="https://gcp-for-newbie.kejyun.com/tags/google-cloud-memorystore/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Google Cloud MemoryStore</title>
+      <link>https://gcp-for-newbie.kejyun.com/docs/google-cloud-memory-store/</link>
+      <pubDate>Mon, 03 May 2021 08:50:29 +0800</pubDate>
+      
+      <guid>https://gcp-for-newbie.kejyun.com/docs/google-cloud-memory-store/</guid>
+      <description>
+        
+        
+        &lt;p&gt;GCP 提供 Google Cloud MemoryStore 快取機器服務，類似 AWS 的 &lt;code&gt;ElasticCache&lt;/code&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Redis</title>
+      <link>https://gcp-for-newbie.kejyun.com/docs/google-cloud-memory-store/redis/</link>
+      <pubDate>Mon, 03 May 2021 08:50:29 +0800</pubDate>
+      
+      <guid>https://gcp-for-newbie.kejyun.com/docs/google-cloud-memory-store/redis/</guid>
+      <description>
+        
+        
+        &lt;p&gt;GCP 提供 Google Cloud MemoryStore 做 &lt;code&gt;Redis&lt;/code&gt; 快取機器服務，類似 AWS 的 &lt;code&gt;ElasticCache&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;1-建立-redis-google-cloud-memorystore&#34;&gt;1. 建立 Redis Google Cloud MemoryStore&lt;/h2&gt;
+&lt;h3 id=&#34;a-建立-redis&#34;&gt;&lt;em&gt;&lt;strong&gt;A. 建立 Redis&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;在 &lt;code&gt;MemoryStore&lt;/code&gt; 頁面點選 &lt;code&gt;建立執行個體&lt;/code&gt; 按鈕，即可開始建立 Redis 主機&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/google-cloud-memory-store-create.png&#34; alt=&#34;建立 Redis&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;b-設定-redis&#34;&gt;&lt;em&gt;&lt;strong&gt;B. 設定 Redis&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;輸入 &lt;code&gt;執行個體 ID&lt;/code&gt; 及 &lt;code&gt;顯示名稱&lt;/code&gt;，並設定執行個體層級為 &lt;code&gt;基本級&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;選擇 Redis 主機機器放置的區域為 &lt;code&gt;asia-east1（台灣）&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;並設定 Redis 主機的記憶體容量&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/google-cloud-memory-store-create-setting.png&#34; alt=&#34;設定 Redis&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;c-建立-redis-完成&#34;&gt;&lt;em&gt;&lt;strong&gt;C. 建立 Redis 完成&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;建立完成後就就可以透過它提供的 IP 進行連線摟&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/google-cloud-memory-store-create-finish.png&#34; alt=&#34;建立 Redis 完成&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;參考資料&#34;&gt;參考資料&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://cloud.google.com/memorystore/&#34;&gt;Memorystore  |  Google Cloud&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

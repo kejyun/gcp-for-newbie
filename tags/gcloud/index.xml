@@ -1,0 +1,273 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GCP 菜雞修煉場 – gcloud</title>
+    <link>https://gcp-for-newbie.kejyun.com/tags/gcloud/</link>
+    <description>Recent content in gcloud on GCP 菜雞修煉場</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Mon, 03 May 2021 08:50:29 +0800</lastBuildDate>
+    
+	  <atom:link href="https://gcp-for-newbie.kejyun.com/tags/gcloud/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: gcloud</title>
+      <link>https://gcp-for-newbie.kejyun.com/docs/gcloud/</link>
+      <pubDate>Mon, 03 May 2021 08:50:29 +0800</pubDate>
+      
+      <guid>https://gcp-for-newbie.kejyun.com/docs/gcloud/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;安裝&#34;&gt;安裝&lt;/h2&gt;
+&lt;p&gt;至&lt;a href=&#34;https://cloud.google.com/sdk/docs/downloads-versioned-archives&#34;&gt;從版本化封存檔中安裝&lt;/a&gt;頁面，下載和您的版本相容的適當封存檔，將下載的 &lt;code&gt;google-cloud-sdk-208.0.1-darwin-x86_64.tar.gz&lt;/code&gt; 解壓縮至家目錄&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;~/google-cloud-sdk/install.sh
+Welcome to the Google Cloud SDK!
+
+To &lt;span style=&#34;color:#204a87&#34;&gt;help&lt;/span&gt; improve the quality of this product, we collect anonymized usage data
+and anonymized stacktraces when crashes are encountered&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;;&lt;/span&gt; additional information
+is available at &amp;lt;https://cloud.google.com/sdk/usage-statistics&amp;gt;. You may choose
+to opt out of this collection now &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;by choosing &lt;span style=&#34;color:#4e9a06&#34;&gt;\&amp;#39;&lt;/span&gt;N&lt;span style=&#34;color:#4e9a06&#34;&gt;\&amp;#39;&lt;/span&gt; at the below prompt&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt;, or at
+any &lt;span style=&#34;color:#204a87&#34;&gt;time&lt;/span&gt; in the future by running the following command:
+
+    gcloud config &lt;span style=&#34;color:#204a87&#34;&gt;set&lt;/span&gt; disable_usage_reporting &lt;span style=&#34;color:#204a87&#34;&gt;true&lt;/span&gt;
+
+Do you want to &lt;span style=&#34;color:#204a87&#34;&gt;help&lt;/span&gt; improve the Google Cloud SDK &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;Y/n&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt;?  n
+Your current Cloud SDK version is: 208.0.1
+The latest available version is: 224.0.0
+
+┌────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│                                                   Components                                                   │
+├──────────────────┬──────────────────────────────────────────────────────┬──────────────────────────┬───────────┤
+│      Status      │                         Name                         │            ID            │    Size   │
+├──────────────────┼──────────────────────────────────────────────────────┼──────────────────────────┼───────────┤
+│ Update Available │ BigQuery Command Line Tool                           │ bq                       │   &amp;lt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1&lt;/span&gt; MiB │
+│ Update Available │ Cloud SDK Core Libraries                             │ core                     │   8.8 MiB │
+│ Update Available │ Cloud Storage Command Line Tool                      │ gsutil                   │   3.5 MiB │
+│ Not Installed    │ App Engine Go Extensions                             │ app-engine-go            │  56.4 MiB │
+│ Not Installed    │ Cloud Bigtable Command Line Tool                     │ cbt                      │   6.3 MiB │
+│ Not Installed    │ Cloud Bigtable Emulator                              │ bigtable                 │   4.3 MiB │
+│ Not Installed    │ Cloud Datalab Command Line Tool                      │ datalab                  │   &amp;lt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1&lt;/span&gt; MiB │
+│ Not Installed    │ Cloud Datastore Emulator                             │ cloud-datastore-emulator │  17.7 MiB │
+│ Not Installed    │ Cloud Datastore Emulator &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;Legacy&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt;                    │ gcd-emulator             │  38.1 MiB │
+│ Not Installed    │ Cloud Pub/Sub Emulator                               │ pubsub-emulator          │  33.4 MiB │
+│ Not Installed    │ Cloud SQL Proxy                                      │ cloud_sql_proxy          │   3.7 MiB │
+│ Not Installed    │ Emulator Reverse Proxy                               │ emulator-reverse-proxy   │  14.5 MiB │
+│ Not Installed    │ Google Cloud Build Local Builder                     │ cloud-build-local        │   5.9 MiB │
+│ Not Installed    │ Google Container Registry&lt;span style=&#34;color:#4e9a06&#34;&gt;\&amp;#39;&lt;/span&gt;s Docker credential helper │ docker-credential-gcr    │   1.8 MiB │
+│ Not Installed    │ gcloud Alpha Commands                                │ alpha                    │   &amp;lt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1&lt;/span&gt; MiB │
+│ Not Installed    │ gcloud Beta Commands                                 │ beta                     │   &amp;lt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1&lt;/span&gt; MiB │
+│ Not Installed    │ gcloud app Java Extensions                           │ app-engine-java          │ 108.8 MiB │
+│ Not Installed    │ gcloud app PHP Extensions                            │ app-engine-php           │  21.9 MiB │
+│ Not Installed    │ gcloud app Python Extensions                         │ app-engine-python        │   6.2 MiB │
+│ Not Installed    │ gcloud app Python Extensions &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;Extra Libraries&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt;       │ app-engine-python-extras │  28.5 MiB │
+│ Not Installed    │ kubectl                                              │ kubectl                  │   &amp;lt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1&lt;/span&gt; MiB │
+└──────────────────┴──────────────────────────────────────────────────────┴──────────────────────────┴───────────┘
+To install or remove components at your current SDK version &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;208.0.1&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt;, run:
+  $ gcloud components install COMPONENT_ID
+  $ gcloud components remove COMPONENT_ID
+
+To update your SDK installation to the latest version &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;224.0.0&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt;, run:
+  $ gcloud components update
+
+
+Modify profile to update your &lt;span style=&#34;color:#000&#34;&gt;$PATH&lt;/span&gt; and &lt;span style=&#34;color:#204a87&#34;&gt;enable&lt;/span&gt; shell &lt;span style=&#34;color:#204a87&#34;&gt;command&lt;/span&gt;
+completion?
+
+Do you want to &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;continue&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;Y/n&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt;? Y
+
+The Google Cloud SDK installer will now prompt you to update an rc
+file to bring the Google Cloud CLIs into your environment.
+
+Enter a path to an rc file to update, or leave blank to use
+&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;/Users/kejyun/.bash_profile&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt;:
+Backing up &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;/Users/kejyun/.bash_profile&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; to &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;/Users/kejyun/.bash_profile.backup&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt;.
+&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;/Users/kejyun/.bash_profile&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; has been updated.
+
+&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;==&lt;/span&gt;&amp;gt; Start a new shell &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;for&lt;/span&gt; the changes to take effect.
+
+
+For more information on how to get started, please visit:
+  https://cloud.google.com/sdk/docs/quickstarts
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;初始化-gcloud-設定&#34;&gt;初始化 gcloud 設定&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;gcloud init
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;輸入指令後，初始化需要連線到 GCP 主機的相關區域及連線設定，會開啟瀏覽器取得 google 帳號的授權&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ gcloud init
+Welcome! This &lt;span style=&#34;color:#204a87&#34;&gt;command&lt;/span&gt; will take you through the configuration of gcloud.
+
+Settings from your current configuration &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;default&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; are:
+compute:
+  region: asia-east1
+  zone: asia-east1-a
+core:
+  account: kj@kejyun.com
+  disable_usage_reporting: &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;False&amp;#39;&lt;/span&gt;
+  project: kejyun-corp
+
+Pick configuration to use:
+ &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;1&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; Re-initialize this configuration &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;default&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; with new settings
+ &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;2&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; Create a new configuration
+Please enter your numeric choice:  &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;2&lt;/span&gt;
+
+Enter configuration name. Names start with a lower &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;case&lt;/span&gt; letter and
+contain only lower &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;case&lt;/span&gt; letters a-z, digits 0-9, and hyphens &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;-&amp;#39;&lt;/span&gt;:  kejyun-research
+Your current configuration has been &lt;span style=&#34;color:#204a87&#34;&gt;set&lt;/span&gt; to: &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;kejyun-research&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt;
+
+You can skip diagnostics next &lt;span style=&#34;color:#204a87&#34;&gt;time&lt;/span&gt; by using the following flag:
+  gcloud init --skip-diagnostics
+
+Network diagnostic detects and fixes &lt;span style=&#34;color:#204a87&#34;&gt;local&lt;/span&gt; network connection issues.
+Checking network connection...done.
+Reachability Check passed.
+Network diagnostic &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;1/1 checks&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt; passed.
+
+Choose the account you would like to use to perform operations &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;for&lt;/span&gt;
+this configuration:
+ &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;1&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; kj@kejyun.com
+ &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;2&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; Log in with a new account
+Please enter your numeric choice:  &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;2&lt;/span&gt;
+
+Your browser has been opened to visit:
+
+    https://accounts.google.com/o/oauth2/auth?XXXXXXX
+
+
+Updates are available &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;for&lt;/span&gt; some Cloud SDK components.  To install them,
+please run:
+  $ gcloud components update
+
+You are logged in as: &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;kj@kejyun.com&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt;.
+
+Pick cloud project to use:
+ &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;1&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; kejyun-analytics-167805
+ &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;2&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; kejyun-research
+ &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;3&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; Create a new project
+Please enter numeric choice or text value &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;must exactly match list
+item&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt;:  &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;2&lt;/span&gt;
+
+Your current project has been &lt;span style=&#34;color:#204a87&#34;&gt;set&lt;/span&gt; to: &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;kejyun-research&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt;.
+
+Do you want to configure a default Compute Region and Zone? &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;Y/n&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt;?  Y
+
+Which Google Compute Engine zone would you like to use as project
+default?
+If you &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;do&lt;/span&gt; not specify a zone via a &lt;span style=&#34;color:#204a87&#34;&gt;command&lt;/span&gt; line flag &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;while&lt;/span&gt; working
+with Compute Engine resources, the default is assumed.
+ &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;1&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; us-east1-b
+ &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;2&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; us-east1-c
+ &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;3&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; us-east1-d
+ &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;4&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; us-east4-c
+ &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;5&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; us-east4-b
+ &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;6&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; us-east4-a
+ &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;7&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; us-central1-c
+ &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;8&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; us-central1-a
+ &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;9&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; us-central1-f
+ &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;10&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; us-central1-b
+ &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;11&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; us-west1-b
+ &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;12&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; us-west1-c
+ &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;13&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; us-west1-a
+ &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;14&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; europe-west4-a
+ &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;15&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; europe-west4-b
+ &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;16&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; europe-west4-c
+ &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;17&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; europe-west1-b
+ &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;18&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; europe-west1-d
+ &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;19&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; europe-west1-c
+ &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;20&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; europe-west3-b
+ &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;21&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; europe-west3-c
+ &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;22&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; europe-west3-a
+ &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;23&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; europe-west2-c
+ &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;24&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; europe-west2-b
+ &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;25&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; europe-west2-a
+ &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;26&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; asia-east1-b
+ &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;27&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; asia-east1-a
+ &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;28&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; asia-east1-c
+ &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;29&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; asia-southeast1-b
+ &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;30&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; asia-southeast1-a
+ &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;31&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; asia-southeast1-c
+ &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;32&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; asia-northeast1-b
+ &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;33&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; asia-northeast1-c
+ &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;34&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; asia-northeast1-a
+ &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;35&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; asia-south1-c
+ &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;36&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; asia-south1-b
+ &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;37&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; asia-south1-a
+ &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;38&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; australia-southeast1-b
+ &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;39&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; australia-southeast1-c
+ &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;40&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; australia-southeast1-a
+ &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;41&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; southamerica-east1-b
+ &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;42&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; southamerica-east1-c
+ &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;43&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; southamerica-east1-a
+ &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;44&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; asia-east2-a
+ &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;45&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; asia-east2-b
+ &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;46&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; asia-east2-c
+ &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;47&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; europe-north1-a
+ &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;48&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; europe-north1-b
+ &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;49&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; europe-north1-c
+ &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;50&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; northamerica-northeast1-a
+Did not print &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;6&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; options.
+Too many options &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;56&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt;. Enter &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;list&amp;#34;&lt;/span&gt; at prompt to print choices fully.
+Please enter numeric choice or text value &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;must exactly match list
+item&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt;:  &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;26&lt;/span&gt;
+
+Your project default Compute Engine zone has been &lt;span style=&#34;color:#204a87&#34;&gt;set&lt;/span&gt; to &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;asia-east1-b&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt;.
+You can change it by running &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;gcloud config &lt;span style=&#34;color:#204a87&#34;&gt;set&lt;/span&gt; compute/zone NAME&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt;.
+
+Your project default Compute Engine region has been &lt;span style=&#34;color:#204a87&#34;&gt;set&lt;/span&gt; to &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;asia-east1&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt;.
+You can change it by running &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;gcloud config &lt;span style=&#34;color:#204a87&#34;&gt;set&lt;/span&gt; compute/region NAME&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt;.
+
+Your Google Cloud SDK is configured and ready to use!
+
+* Commands that require authentication will use kj@kejyun.com by default
+* Commands will reference project &lt;span style=&#34;color:#4e9a06&#34;&gt;`&lt;/span&gt;kejyun-research&lt;span style=&#34;color:#4e9a06&#34;&gt;`&lt;/span&gt; by default
+* Compute Engine commands will use region &lt;span style=&#34;color:#4e9a06&#34;&gt;`&lt;/span&gt;asia-east1&lt;span style=&#34;color:#4e9a06&#34;&gt;`&lt;/span&gt; by default
+* Compute Engine commands will use zone &lt;span style=&#34;color:#4e9a06&#34;&gt;`&lt;/span&gt;asia-east1-b&lt;span style=&#34;color:#4e9a06&#34;&gt;`&lt;/span&gt; by default
+
+Run &lt;span style=&#34;color:#4e9a06&#34;&gt;`&lt;/span&gt;gcloud &lt;span style=&#34;color:#204a87&#34;&gt;help&lt;/span&gt; config&lt;span style=&#34;color:#4e9a06&#34;&gt;`&lt;/span&gt; to learn how to change individual settings
+
+This gcloud configuration is called &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;kejyun-research&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt;. You can create additional configurations &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;if&lt;/span&gt; you work with multiple accounts and/or projects.
+Run &lt;span style=&#34;color:#4e9a06&#34;&gt;`&lt;/span&gt;gcloud topic configurations&lt;span style=&#34;color:#4e9a06&#34;&gt;`&lt;/span&gt; to learn more.
+
+Some things to try next:
+
+* Run &lt;span style=&#34;color:#4e9a06&#34;&gt;`&lt;/span&gt;gcloud --help&lt;span style=&#34;color:#4e9a06&#34;&gt;`&lt;/span&gt; to see the Cloud Platform services you can interact with. And run &lt;span style=&#34;color:#4e9a06&#34;&gt;`&lt;/span&gt;gcloud &lt;span style=&#34;color:#204a87&#34;&gt;help&lt;/span&gt; COMMAND&lt;span style=&#34;color:#4e9a06&#34;&gt;`&lt;/span&gt; to get &lt;span style=&#34;color:#204a87&#34;&gt;help&lt;/span&gt; on any gcloud command.
+* Run &lt;span style=&#34;color:#4e9a06&#34;&gt;`&lt;/span&gt;gcloud topic -h&lt;span style=&#34;color:#4e9a06&#34;&gt;`&lt;/span&gt; to learn about advanced features of the SDK like arg files and output formatting
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;使用-gcloud-連線到-compute-engine-主機&#34;&gt;使用 gcloud 連線到 Compute Engine 主機&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;gcloud compute --project &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&amp;lt;project-name&amp;gt;&amp;#34;&lt;/span&gt; ssh --zone &amp;lt;backend-zone&amp;gt; &amp;lt;backend-name&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;gcloud compute --project &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;kejyun-research&amp;#34;&lt;/span&gt; ssh --zone asia-east1-b kejyun-dev
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;gcloud compute --project &amp;quot;kejyun-research&amp;quot; ssh --zone asia-east1-b kejyun-dev
+Updating project ssh metadata...\Updated [https://www.googleapis.com/compute/v1/projects/kejyun-research].
+Updating project ssh metadata...done.
+Waiting for SSH key to propagate.
+Warning: Permanently added &#39;compute.3581355771881432819&#39; (ECDSA) to the list of known hosts.
+Welcome to Ubuntu 16.04.5 LTS (GNU/Linux 4.15.0-1023-gcp x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  Get cloud support with Ubuntu Advantage Cloud Guest:
+    http://www.ubuntu.com/business/services/cloud
+This system has been minimized by removing packages and content that are
+not required on a system that users do not log into.
+
+To restore this content, you can run the &#39;unminimize&#39; command.
+
+0 packages can be updated.
+0 updates are security updates.
+
+kejyun@kejyun-dev:~$
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;參考資料&#34;&gt;參考資料&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://cloud.google.com/sdk/install&#34;&gt;安裝 Google Cloud SDK  |  Cloud SDK 說明文件  |  Google Cloud&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cloud.google.com/sdk/docs/downloads-versioned-archives&#34;&gt;從版本化封存檔中安裝  |  Cloud SDK 說明文件  |  Google Cloud&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

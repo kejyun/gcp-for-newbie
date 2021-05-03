@@ -1,0 +1,40 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GCP 菜雞修煉場 – 帳號權限</title>
+    <link>https://gcp-for-newbie.kejyun.com/tags/%E5%B8%B3%E8%99%9F%E6%AC%8A%E9%99%90/</link>
+    <description>Recent content in 帳號權限 on GCP 菜雞修煉場</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Mon, 03 May 2021 08:50:29 +0800</lastBuildDate>
+    
+	  <atom:link href="https://gcp-for-newbie.kejyun.com/tags/%E5%B8%B3%E8%99%9F%E6%AC%8A%E9%99%90/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: 帳號權限</title>
+      <link>https://gcp-for-newbie.kejyun.com/docs/google-cloud-sql/mysql/account-privilege/</link>
+      <pubDate>Mon, 03 May 2021 08:50:29 +0800</pubDate>
+      
+      <guid>https://gcp-for-newbie.kejyun.com/docs/google-cloud-sql/mysql/account-privilege/</guid>
+      <description>
+        
+        
+        &lt;blockquote&gt;
+&lt;p&gt;Users created using Cloud SQL have the &lt;code&gt;same privileges as the root user&lt;/code&gt;. You can change their privileges by using the GRANT or REVOKE statements.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;參考資料&#34;&gt;參考資料&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://cloud.google.com/sql/docs/mysql/create-manage-users&#34;&gt;Creating and Managing MySQL Users  |  Cloud SQL for MySQL  |  Google Cloud&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cloud.google.com/sql/docs/mysql/users&#34;&gt;MySQL Users  |  Cloud SQL for MySQL  |  Google Cloud&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

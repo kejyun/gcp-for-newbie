@@ -1,0 +1,55 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GCP 菜雞修煉場 – VM 實例</title>
+    <link>https://gcp-for-newbie.kejyun.com/categories/vm-%E5%AF%A6%E4%BE%8B/</link>
+    <description>Recent content in VM 實例 on GCP 菜雞修煉場</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Mon, 03 May 2021 08:50:29 +0800</lastBuildDate>
+    
+	  <atom:link href="https://gcp-for-newbie.kejyun.com/categories/vm-%E5%AF%A6%E4%BE%8B/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: VM 實例 (VM Instances) </title>
+      <link>https://gcp-for-newbie.kejyun.com/docs/google-compute-engine/vm-instance/</link>
+      <pubDate>Mon, 03 May 2021 08:50:29 +0800</pubDate>
+      
+      <guid>https://gcp-for-newbie.kejyun.com/docs/google-compute-engine/vm-instance/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;建立-google-compute-enginegce-vm-instance&#34;&gt;建立 Google Compute Engine（GCE） VM Instance&lt;/h2&gt;
+&lt;h3 id=&#34;1-開始建立&#34;&gt;&lt;em&gt;&lt;strong&gt;1. 開始建立&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;進入 &lt;code&gt;Compute Engine&lt;/code&gt; 選單中，點選 &lt;code&gt;VM 執行個體&lt;/code&gt;，在 &lt;code&gt;VM 執行個體&lt;/code&gt; 頁面點選 &lt;code&gt;建立&lt;/code&gt; 按鈕，即可開始建立 VM&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./images/google-compute-engine-create.png&#34; alt=&#34;建立 Google Compute Engine（GCE） VM Instance&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;2-設定-vm-設定&#34;&gt;&lt;em&gt;&lt;strong&gt;2. 設定 VM 設定&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;輸入這次建立 VM 的 &lt;code&gt;名稱&lt;/code&gt;，選擇主機所在 &lt;code&gt;區域&lt;/code&gt;，並選擇要建立的&lt;a href=&#34;https://cloud.google.com/compute/docs/machine-types&#34;&gt;機器類型&lt;/a&gt;是什麼&lt;/p&gt;
+&lt;p&gt;若要做為 web 服務，則需要在 &lt;code&gt;防火牆&lt;/code&gt; 設定選擇允許 HTTP 及 HTTPS 流量&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./images/google-compute-engine-create-check-vm-setting.png&#34; alt=&#34;建立 Google Compute Engine（GCE） VM Instance 設定&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;3-選擇開機磁碟設定&#34;&gt;&lt;em&gt;&lt;strong&gt;3. 選擇開機磁碟設定&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;在 &lt;code&gt;開機磁碟&lt;/code&gt; 選擇要使用的映像檔，這裡選擇的是 GCP 官方提供的 &lt;code&gt;Ubuntu 16.04 LTS Minimal&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;並將硬碟設為 &lt;code&gt;標準永久磁碟&lt;/code&gt;，容量為 &lt;code&gt;50 G&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./images/google-compute-engine-create-choose-system-image.png&#34; alt=&#34;選擇開機磁碟設定&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;4-建立完成&#34;&gt;&lt;em&gt;&lt;strong&gt;4. 建立完成&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;建立完成後，在 &lt;code&gt;VM 執行個體&lt;/code&gt; 頁面即可看到剛剛建立的 VM 主機了&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./images/google-compute-engine-create-finish.png&#34; alt=&#34;VM 建立完成&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;連線至-vm-主機&#34;&gt;連線至 VM 主機&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;gcloud compute --project &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&amp;lt;project-name&amp;gt;&amp;#34;&lt;/span&gt; ssh --zone &amp;lt;backend-zone&amp;gt; &amp;lt;backend-name&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;gcloud compute --project &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;kejyun-research&amp;#34;&lt;/span&gt; ssh --zone asia-east1-b kejyun-dev
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;參考資料&#34;&gt;參考資料&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://cloud.google.com/compute/docs/machine-types&#34;&gt;機器類型  |  Compute Engine Documentation  |  Google Cloud&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cloud.google.com/compute/pricing&#34;&gt;Google Compute Engine 定價  |  Compute Engine Documentation  |  Google Cloud&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

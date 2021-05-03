@@ -1,0 +1,39 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GCP 菜雞修煉場 – Reference</title>
+    <link>https://gcp-for-newbie.kejyun.com/categories/reference/</link>
+    <description>Recent content in Reference on GCP 菜雞修煉場</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Mon, 03 May 2021 08:50:29 +0800</lastBuildDate>
+    
+	  <atom:link href="https://gcp-for-newbie.kejyun.com/categories/reference/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: 參考資料</title>
+      <link>https://gcp-for-newbie.kejyun.com/docs/reference/</link>
+      <pubDate>Mon, 03 May 2021 08:50:29 +0800</pubDate>
+      
+      <guid>https://gcp-for-newbie.kejyun.com/docs/reference/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;教學文章&#34;&gt;教學文章&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://ithelp.ithome.com.tw/articles/10197590&#34;&gt;[Day-39] Google Cloud Platform(1)-免費開通試用雲端服務 - iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ithelp.ithome.com.tw/articles/10197669&#34;&gt;[Day-40] Google Cloud Platform(2)-建立專案與VM部署 - iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ithelp.ithome.com.tw/articles/10197683&#34;&gt;[Day-41] Google Cloud Platform(3)-建立SQL雲端資料庫 - iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ithelp.ithome.com.tw/articles/10197685&#34;&gt;[Day-42] Google Cloud Platform(4)-API測試 - iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

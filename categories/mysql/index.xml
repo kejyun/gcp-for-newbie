@@ -1,0 +1,100 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GCP 菜雞修煉場 – MySQL</title>
+    <link>https://gcp-for-newbie.kejyun.com/categories/mysql/</link>
+    <description>Recent content in MySQL on GCP 菜雞修煉場</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Mon, 03 May 2021 08:50:29 +0800</lastBuildDate>
+    
+	  <atom:link href="https://gcp-for-newbie.kejyun.com/categories/mysql/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: MySQL</title>
+      <link>https://gcp-for-newbie.kejyun.com/docs/google-cloud-sql/mysql/</link>
+      <pubDate>Mon, 03 May 2021 08:50:29 +0800</pubDate>
+      
+      <guid>https://gcp-for-newbie.kejyun.com/docs/google-cloud-sql/mysql/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: 建立</title>
+      <link>https://gcp-for-newbie.kejyun.com/docs/google-cloud-sql/mysql/create/</link>
+      <pubDate>Mon, 03 May 2021 08:50:29 +0800</pubDate>
+      
+      <guid>https://gcp-for-newbie.kejyun.com/docs/google-cloud-sql/mysql/create/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;1-建立-mysql-實例&#34;&gt;1. 建立 MySQL 實例&lt;/h2&gt;
+&lt;h3 id=&#34;a-建立-cloud-sql-執行個體&#34;&gt;&lt;em&gt;&lt;strong&gt;A. 建立 Cloud SQL 執行個體&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;進入到 &lt;code&gt;Google Cloud SQL&lt;/code&gt; 頁面點選 &lt;code&gt;建立執行個體&lt;/code&gt; 開始建立 MySQL 實例&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/google-cloud-sql-create.png&#34; alt=&#34;建立 Cloud SQL 執行個體&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;b-選擇-cloud-sql-引擎&#34;&gt;&lt;em&gt;&lt;strong&gt;B. 選擇 Cloud SQL 引擎&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;選擇使用 &lt;code&gt;MySQL&lt;/code&gt; 當作 Cloud SQL 引擎&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/google-cloud-sql-choose-engine-mysql.png&#34; alt=&#34;選擇 Cloud SQL 引擎&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;c-選擇-cloud-sql-mysql-類型&#34;&gt;&lt;em&gt;&lt;strong&gt;C. 選擇 Cloud SQL MySQL 類型&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;選擇使用 &lt;code&gt;MySQL 第二代&lt;/code&gt; 資料庫類型&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/google-cloud-sql-choose-engine-mysql-2nd-generation.png&#34; alt=&#34;選擇 Cloud SQL MySQL 類型&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;d-設定-cloud-sql-mysql-基本設定&#34;&gt;&lt;em&gt;&lt;strong&gt;D. 設定 Cloud SQL MySQL 基本設定&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;設定 &lt;code&gt;Cloud SQL MySQL&lt;/code&gt; 的 &lt;code&gt;名稱&lt;/code&gt; 及 &lt;code&gt;root&lt;/code&gt; 帳號的密碼&lt;/p&gt;
+&lt;p&gt;並選擇區域為 &lt;code&gt;asia-east1（台灣）&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/google-cloud-sql-set-mysql-password-and-area.png&#34; alt=&#34;設定 Cloud SQL MySQL 基本設定&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;e-設定-cloud-sql-mysql-進階設定&#34;&gt;&lt;em&gt;&lt;strong&gt;E. 設定 Cloud SQL MySQL 進階設定&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;選擇資料庫版本為 &lt;code&gt;MySQL 5.7&lt;/code&gt;，設定機器類行為 &lt;code&gt;db-f1-micro&lt;/code&gt;，儲存空間設定為 &lt;code&gt;10G&lt;/code&gt; 並 &lt;code&gt;視需要自動擴充&lt;/code&gt; 儲存空間，設定完成後點選建立即可&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/google-cloud-sql-set-mysql-instance-setting.png&#34; alt=&#34;設定 Cloud SQL MySQL 基本設定&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;f-完成建立-cloud-sql-mysql&#34;&gt;&lt;em&gt;&lt;strong&gt;F. 完成建立 Cloud SQL MySQL&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;建立完成後即可在 &lt;code&gt;Cloud SQL&lt;/code&gt; 頁面看到剛剛建立的實例&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/google-cloud-sql-create-finish.png&#34; alt=&#34;完成建立 Cloud SQL MySQL&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;g-cloud-sql-mysql-實例儀表板&#34;&gt;&lt;em&gt;&lt;strong&gt;G. Cloud SQL MySQL 實例儀表板&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;點選 &lt;code&gt;Cloud SQL 實例名稱&lt;/code&gt; 即可看到儀表板相關資訊，點選 &lt;code&gt;連線設定&lt;/code&gt; 可以設定哪些 IP 可以連線到此資料庫&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/google-cloud-sql-instance-dashboard.png&#34; alt=&#34;Cloud SQL MySQL 實例儀表板&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;h-cloud-sql-mysql-實例儀表板&#34;&gt;&lt;em&gt;&lt;strong&gt;H. Cloud SQL MySQL 實例儀表板&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;在連線設定中新增 &lt;code&gt;Google Compute Engine&lt;/code&gt; 的 IP 即可讓 VM 可以連線到此資料庫&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Cloud SQL 預設禁止任何連線連到資料庫，需要設定 IP 才可允許連線&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;../images/google-cloud-sql-set-mysql-allow-connection.png&#34; alt=&#34;Cloud SQL MySQL 實例儀表板&#34;&gt;&lt;/p&gt;
+&lt;p&gt;設定完成後即可連線到 Cloud SQL MySQL 了&lt;/p&gt;
+&lt;h2 id=&#34;參考資料&#34;&gt;參考資料&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://ithelp.ithome.com.tw/articles/10197683&#34;&gt;[Day-41] Google Cloud Platform(3)-建立SQL雲端資料庫 - iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: 帳號權限</title>
+      <link>https://gcp-for-newbie.kejyun.com/docs/google-cloud-sql/mysql/account-privilege/</link>
+      <pubDate>Mon, 03 May 2021 08:50:29 +0800</pubDate>
+      
+      <guid>https://gcp-for-newbie.kejyun.com/docs/google-cloud-sql/mysql/account-privilege/</guid>
+      <description>
+        
+        
+        &lt;blockquote&gt;
+&lt;p&gt;Users created using Cloud SQL have the &lt;code&gt;same privileges as the root user&lt;/code&gt;. You can change their privileges by using the GRANT or REVOKE statements.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;參考資料&#34;&gt;參考資料&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://cloud.google.com/sql/docs/mysql/create-manage-users&#34;&gt;Creating and Managing MySQL Users  |  Cloud SQL for MySQL  |  Google Cloud&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cloud.google.com/sql/docs/mysql/users&#34;&gt;MySQL Users  |  Cloud SQL for MySQL  |  Google Cloud&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

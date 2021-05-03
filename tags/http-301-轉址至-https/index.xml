@@ -1,0 +1,63 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GCP 菜雞修煉場 – http 301 轉址至 https</title>
+    <link>https://gcp-for-newbie.kejyun.com/tags/http-301-%E8%BD%89%E5%9D%80%E8%87%B3-https/</link>
+    <description>Recent content in http 301 轉址至 https on GCP 菜雞修煉場</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Mon, 03 May 2021 08:50:29 +0800</lastBuildDate>
+    
+	  <atom:link href="https://gcp-for-newbie.kejyun.com/tags/http-301-%E8%BD%89%E5%9D%80%E8%87%B3-https/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: http 301 轉址至 https</title>
+      <link>https://gcp-for-newbie.kejyun.com/docs/google-compute-engine/load-balancer/http-301-to-https/</link>
+      <pubDate>Mon, 03 May 2021 08:50:29 +0800</pubDate>
+      
+      <guid>https://gcp-for-newbie.kejyun.com/docs/google-compute-engine/load-balancer/http-301-to-https/</guid>
+      <description>
+        
+        
+        &lt;p&gt;通常我們會使用 Nginx 的 &lt;code&gt;schema&lt;/code&gt; 是否為 &lt;code&gt;http&lt;/code&gt; 去判斷是否需要做 301 轉址到 &lt;code&gt;https&lt;/code&gt;，Nginx 就會像下方設定&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;server &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;$scheme&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; http&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt;
+        &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;301&lt;/span&gt; https://&lt;span style=&#34;color:#000&#34;&gt;$server_name$request_uri&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;;&lt;/span&gt;
+    &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;但使用 GCP 的 &lt;code&gt;負載平衡（Load Balancer）&lt;/code&gt; 時，當 &lt;code&gt;https&lt;/code&gt; 的請求進來時， GCP 轉送封包到 &lt;code&gt;負載平衡後端服務&lt;/code&gt; 時，會使用 &lt;code&gt;http&lt;/code&gt; 去做轉送，導致請求產生無窮迴圈的狀況&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;https (Load Balancer)&lt;/code&gt; =&amp;gt; &lt;code&gt;http (Nginx)&lt;/code&gt; =&amp;gt; &lt;code&gt;301 轉址 https 至 Load Balancer&lt;/code&gt; （無窮迴圈）&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;目前 (2018-11-20) 這個狀況還沒解決，在 &lt;a href=&#34;https://googlecloudplatform.uservoice.com/forums/302616-load-balancing/suggestions/31951531-allow-http-to-redirect-to-https-automatically&#34;&gt;Google Cloud Platform Feedback&lt;/a&gt; 被討論中&lt;/p&gt;
+&lt;p&gt;為了解決這個問題，可以改用 &lt;code&gt;$http_x_forwarded_proto&lt;/code&gt; 去判斷轉送過來的封包是否為 &lt;code&gt;http&lt;/code&gt; 再去做 301 轉址&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;server &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt;
+        listen &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;80&lt;/span&gt; default_server&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;;&lt;/span&gt;
+        listen &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;::&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt;:80 default_server &lt;span style=&#34;color:#000&#34;&gt;ipv6only&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;on&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;;&lt;/span&gt;
+
+        listen &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;443&lt;/span&gt; ssl default_server&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;;&lt;/span&gt;
+        listen &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;::&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt;:443 ssl default_server&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;;&lt;/span&gt;
+
+        &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;$http_x_forwarded_proto&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;http&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt;
+           &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;301&lt;/span&gt; https://&lt;span style=&#34;color:#000&#34;&gt;$host$request_uri&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;;&lt;/span&gt;
+        &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;}&lt;/span&gt;
+
+        ssl_certificate /etc/nginx/ssl/nginx.crt&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;;&lt;/span&gt;
+        ssl_certificate_key /etc/nginx/ssl/nginx.key&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;;&lt;/span&gt;
+&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;參考資料&#34;&gt;參考資料&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://serverfault.com/questions/862725/how-can-you-redirect-http-to-https-gcp-load-balancing/866912&#34;&gt;google cloud platform - How can you redirect HTTP to HTTPS (GCP Load Balancing)? - Server Fault&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://googlecloudplatform.uservoice.com/forums/302616-load-balancing/suggestions/31951531-allow-http-to-redirect-to-https-automatically&#34;&gt;Allow HTTP to redirect to HTTPS automatically – Google Cloud Platform Feedback&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

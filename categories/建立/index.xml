@@ -1,0 +1,299 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GCP 菜雞修煉場 – 建立</title>
+    <link>https://gcp-for-newbie.kejyun.com/categories/%E5%BB%BA%E7%AB%8B/</link>
+    <description>Recent content in 建立 on GCP 菜雞修煉場</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Mon, 03 May 2021 08:50:29 +0800</lastBuildDate>
+    
+	  <atom:link href="https://gcp-for-newbie.kejyun.com/categories/%E5%BB%BA%E7%AB%8B/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: 建立</title>
+      <link>https://gcp-for-newbie.kejyun.com/docs/apis-services/create/</link>
+      <pubDate>Mon, 03 May 2021 08:50:29 +0800</pubDate>
+      
+      <guid>https://gcp-for-newbie.kejyun.com/docs/apis-services/create/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;1-api-服務憑證&#34;&gt;1. API 服務憑證&lt;/h2&gt;
+&lt;h3 id=&#34;a-建立憑證credentials&#34;&gt;&lt;em&gt;&lt;strong&gt;A. 建立憑證（Credentials）&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;在 &lt;code&gt;API 服務&lt;/code&gt; 頁面的 &lt;code&gt;憑證&lt;/code&gt; 頁簽點選 &lt;code&gt;建立憑證&lt;/code&gt; 按鈕，選擇建立 &lt;code&gt;服務帳戶金鑰&lt;/code&gt; 即可開始建立憑證&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/google-apis-services-create-service-account-key.png&#34; alt=&#34;建立憑證（Credentials）&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;b-設定憑證&#34;&gt;&lt;em&gt;&lt;strong&gt;B. 設定憑證&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;在憑證設定頁面，輸入憑證 &lt;code&gt;帳號名稱&lt;/code&gt;，並選擇服務帳號可以存取的權限 &lt;code&gt;角色&lt;/code&gt; 是什麼，&lt;code&gt;金鑰類型&lt;/code&gt; 選擇用 &lt;code&gt;JSON&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/google-apis-services-create-service-account-key-setting.png&#34; alt=&#34;設定憑證&#34;&gt;&lt;/p&gt;
+&lt;p&gt;設定完後點選 &lt;code&gt;建立&lt;/code&gt; 按鈕，下載憑證即可立即使用&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: 建立</title>
+      <link>https://gcp-for-newbie.kejyun.com/docs/google-cloud-sql/mysql/create/</link>
+      <pubDate>Mon, 03 May 2021 08:50:29 +0800</pubDate>
+      
+      <guid>https://gcp-for-newbie.kejyun.com/docs/google-cloud-sql/mysql/create/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;1-建立-mysql-實例&#34;&gt;1. 建立 MySQL 實例&lt;/h2&gt;
+&lt;h3 id=&#34;a-建立-cloud-sql-執行個體&#34;&gt;&lt;em&gt;&lt;strong&gt;A. 建立 Cloud SQL 執行個體&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;進入到 &lt;code&gt;Google Cloud SQL&lt;/code&gt; 頁面點選 &lt;code&gt;建立執行個體&lt;/code&gt; 開始建立 MySQL 實例&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/google-cloud-sql-create.png&#34; alt=&#34;建立 Cloud SQL 執行個體&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;b-選擇-cloud-sql-引擎&#34;&gt;&lt;em&gt;&lt;strong&gt;B. 選擇 Cloud SQL 引擎&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;選擇使用 &lt;code&gt;MySQL&lt;/code&gt; 當作 Cloud SQL 引擎&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/google-cloud-sql-choose-engine-mysql.png&#34; alt=&#34;選擇 Cloud SQL 引擎&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;c-選擇-cloud-sql-mysql-類型&#34;&gt;&lt;em&gt;&lt;strong&gt;C. 選擇 Cloud SQL MySQL 類型&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;選擇使用 &lt;code&gt;MySQL 第二代&lt;/code&gt; 資料庫類型&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/google-cloud-sql-choose-engine-mysql-2nd-generation.png&#34; alt=&#34;選擇 Cloud SQL MySQL 類型&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;d-設定-cloud-sql-mysql-基本設定&#34;&gt;&lt;em&gt;&lt;strong&gt;D. 設定 Cloud SQL MySQL 基本設定&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;設定 &lt;code&gt;Cloud SQL MySQL&lt;/code&gt; 的 &lt;code&gt;名稱&lt;/code&gt; 及 &lt;code&gt;root&lt;/code&gt; 帳號的密碼&lt;/p&gt;
+&lt;p&gt;並選擇區域為 &lt;code&gt;asia-east1（台灣）&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/google-cloud-sql-set-mysql-password-and-area.png&#34; alt=&#34;設定 Cloud SQL MySQL 基本設定&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;e-設定-cloud-sql-mysql-進階設定&#34;&gt;&lt;em&gt;&lt;strong&gt;E. 設定 Cloud SQL MySQL 進階設定&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;選擇資料庫版本為 &lt;code&gt;MySQL 5.7&lt;/code&gt;，設定機器類行為 &lt;code&gt;db-f1-micro&lt;/code&gt;，儲存空間設定為 &lt;code&gt;10G&lt;/code&gt; 並 &lt;code&gt;視需要自動擴充&lt;/code&gt; 儲存空間，設定完成後點選建立即可&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/google-cloud-sql-set-mysql-instance-setting.png&#34; alt=&#34;設定 Cloud SQL MySQL 基本設定&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;f-完成建立-cloud-sql-mysql&#34;&gt;&lt;em&gt;&lt;strong&gt;F. 完成建立 Cloud SQL MySQL&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;建立完成後即可在 &lt;code&gt;Cloud SQL&lt;/code&gt; 頁面看到剛剛建立的實例&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/google-cloud-sql-create-finish.png&#34; alt=&#34;完成建立 Cloud SQL MySQL&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;g-cloud-sql-mysql-實例儀表板&#34;&gt;&lt;em&gt;&lt;strong&gt;G. Cloud SQL MySQL 實例儀表板&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;點選 &lt;code&gt;Cloud SQL 實例名稱&lt;/code&gt; 即可看到儀表板相關資訊，點選 &lt;code&gt;連線設定&lt;/code&gt; 可以設定哪些 IP 可以連線到此資料庫&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/google-cloud-sql-instance-dashboard.png&#34; alt=&#34;Cloud SQL MySQL 實例儀表板&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;h-cloud-sql-mysql-實例儀表板&#34;&gt;&lt;em&gt;&lt;strong&gt;H. Cloud SQL MySQL 實例儀表板&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;在連線設定中新增 &lt;code&gt;Google Compute Engine&lt;/code&gt; 的 IP 即可讓 VM 可以連線到此資料庫&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Cloud SQL 預設禁止任何連線連到資料庫，需要設定 IP 才可允許連線&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;../images/google-cloud-sql-set-mysql-allow-connection.png&#34; alt=&#34;Cloud SQL MySQL 實例儀表板&#34;&gt;&lt;/p&gt;
+&lt;p&gt;設定完成後即可連線到 Cloud SQL MySQL 了&lt;/p&gt;
+&lt;h2 id=&#34;參考資料&#34;&gt;參考資料&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://ithelp.ithome.com.tw/articles/10197683&#34;&gt;[Day-41] Google Cloud Platform(3)-建立SQL雲端資料庫 - iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: 建立</title>
+      <link>https://gcp-for-newbie.kejyun.com/docs/google-cloud-sql/proxy/create/</link>
+      <pubDate>Mon, 03 May 2021 08:50:29 +0800</pubDate>
+      
+      <guid>https://gcp-for-newbie.kejyun.com/docs/google-cloud-sql/proxy/create/</guid>
+      <description>
+        
+        
+        &lt;p&gt;因為 Cloud SQL 預設是將所有連線擋掉，所以要允許機器連線至 Cloud SQL 時，需要手動設定哪些 IP 允許連線才可以順利連線到資料庫&lt;/p&gt;
+&lt;p&gt;但是若主機設定 Auto Scaling，則每次的主機 IP 都不同，這樣就沒辦法做到自動 Auto Scaling 還能夠連線到 Cloud SQL 了&lt;/p&gt;
+&lt;p&gt;為了解決 Auto Scaling 連線到 Cloud SQL 的問題，可以透過 Cloud SQL Proxy 在主機內建立一個跳板，連線到 &lt;code&gt;本機（127.0.0.1）&lt;/code&gt; 透過憑證驗證授權後再連線到 Cloud SQL&lt;/p&gt;
+&lt;h2 id=&#34;下載-cloud-sql-proxy&#34;&gt;下載 Cloud SQL Proxy&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;作業系統 Ubuntu 16.04&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;color:#204a87&#34;&gt;cd&lt;/span&gt; /home/ubuntu
+wget https://dl.google.com/cloudsql/cloud_sql_proxy.linux.amd64 -O cloud_sql_proxy
+chmod +x cloud_sql_proxy
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;建立服務帳號&#34;&gt;建立服務帳號&lt;/h2&gt;
+&lt;h3 id=&#34;a-建立服務帳戶&#34;&gt;&lt;em&gt;&lt;strong&gt;A. 建立服務帳戶&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;前往 &lt;a href=&#34;https://console.cloud.google.com/iam-admin/serviceaccounts/&#34;&gt;GCP 服務帳戶頁面&lt;/a&gt;，建立服務帳戶&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/google-cloud-iam-create-service-account.png&#34; alt=&#34;建立服務帳戶&#34;&gt;&lt;/p&gt;
+&lt;p&gt;設定服務帳戶設定資料，輸入服務帳戶名稱 &lt;code&gt;cloud-sql-proxy-service&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/google-cloud-iam-setting-service-account.png&#34; alt=&#34;設定服務帳戶設定資料&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;b-設定服務帳戶角色&#34;&gt;&lt;em&gt;&lt;strong&gt;B. 設定服務帳戶角色&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;設定服務帳戶角色為 &lt;code&gt;Cloud SQL 管理員&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/google-cloud-iam-choose-service-account-role.png&#34; alt=&#34;設定服務帳戶角色&#34;&gt;&lt;/p&gt;
+&lt;p&gt;設定完成後即可看到角色為 &lt;code&gt;Cloud SQL 管理員&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/google-cloud-iam-choose-service-account-role-finish.png&#34; alt=&#34;設定服務帳戶角色完成&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;c-建立服務帳戶金鑰&#34;&gt;&lt;em&gt;&lt;strong&gt;C. 建立服務帳戶金鑰&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;點選 &lt;code&gt;+ 建立金鑰&lt;/code&gt; 建立此服務帳戶權限可存取的金鑰&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/google-cloud-iam-create-service-account-certificate.png&#34; alt=&#34;建立服務帳戶金鑰&#34;&gt;&lt;/p&gt;
+&lt;p&gt;選擇服務帳戶金鑰類型為 &lt;code&gt;JSON&lt;/code&gt; 檔案，點選 &lt;code&gt;建立&lt;/code&gt; 按鈕後即可下載金鑰檔案&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/google-cloud-iam-create-service-account-certificate-create.png&#34; alt=&#34;選擇服務帳戶金鑰類型&#34;&gt;&lt;/p&gt;
+&lt;p&gt;下載金鑰完成畫面如下&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/google-cloud-iam-create-service-account-certificate-save.png&#34; alt=&#34;儲存服務帳戶金鑰&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;d-建立服務帳戶金鑰完成&#34;&gt;&lt;em&gt;&lt;strong&gt;D. 建立服務帳戶金鑰完成&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;完成後就可以看到剛剛建立的服務帳戶出現在帳戶列表了&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/google-cloud-iam-create-service-account-finish.png&#34; alt=&#34;建立服務帳戶金鑰完成&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;透過-cloud-sql-proxy-連線到資料庫&#34;&gt;透過 Cloud SQL Proxy 連線到資料庫&lt;/h2&gt;
+&lt;p&gt;在 &lt;code&gt;cloud_sql_proxy&lt;/code&gt; 執行檔參數可以設定 &lt;code&gt;-instances&lt;/code&gt; 指定 Cloud SQL 的連線名稱，透過 &lt;code&gt;-credential_file&lt;/code&gt; 指定憑證 JSON 檔案路徑&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;./cloud_sql_proxy -instances&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&amp;lt;INSTANCE_CONNECTION_NAME&amp;gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;tcp:3306 &lt;span style=&#34;color:#4e9a06&#34;&gt;\
+&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&lt;/span&gt;                  -credential_file&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&amp;lt;PATH_TO_KEY_FILE&amp;gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;amp;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;a-找到你的-cloud-sql-instance-連線名稱&#34;&gt;&lt;em&gt;&lt;strong&gt;A. 找到你的 Cloud SQL instance 連線名稱&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;打開 GCP Console 進入 Cloud SQL instance 主機頁面，在下方的 &lt;code&gt;執行個體連線名稱（Instance connection name）&lt;/code&gt; 就是 &lt;code&gt;Cloud SQL Proxy&lt;/code&gt; 的 &lt;code&gt;-instances&lt;/code&gt; 連線名稱，長得會像下面這樣：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;專案名稱&amp;gt;:&amp;lt;區域名稱&amp;gt;:&amp;lt;Cloud SQL Instance 名稱&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;kejyun-project:asia-east1:kejyun-mysql-asia-east&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;../images/google-cloud-sql-find-instance-name.png&#34; alt=&#34;找到你的 Cloud SQL instance 連線名稱&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;b-設定-cloud-sql-服務帳戶金鑰&#34;&gt;&lt;em&gt;&lt;strong&gt;B. 設定 Cloud SQL 服務帳戶金鑰&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;將剛剛下載的 &lt;code&gt;Cloud SQL 服務帳戶金鑰&lt;/code&gt; 放到 &lt;code&gt;Google Compute Engine（GCE）&lt;/code&gt; 主機中&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;vim /home/ubuntu/key/kejyun-cloud-sql-proxy.json
+&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+  &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;type&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;service_account&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+  &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;project_id&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;kejyun-research&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+  &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;private_key_id&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;a03909nwoefnwo0a7a142da5446ea9b14fee2b097&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+  &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;private_key&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCsCw2zRr31w0rM\nTVaQlyzXBy7qoYInmVXMiZ77ti4yEswc/GYBW9K/6jjb0GgpU7FzIkcd+DuFCWNR/Kjv4k2qkbtecjgVsd4OG/ZA\n-----END PRIVATE KEY-----\n&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+  &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;client_email&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;cloud-sql-proxy-service@kejyun-research.iam.gserviceaccount.com&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+  &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;client_id&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;12345678901234567890&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+  &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;auth_uri&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;https://accounts.google.com/o/oauth2/auth&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+  &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;token_uri&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;https://oauth2.googleapis.com/token&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+  &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;auth_provider_x509_cert_url&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;https://www.googleapis.com/oauth2/v1/certs&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+  &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;client_x509_cert_url&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;https://www.googleapis.com/robot/v1/metadata/x509/kejyun&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;c-建立-cloud-sql-proxy&#34;&gt;&lt;em&gt;&lt;strong&gt;C. 建立 Cloud SQL Proxy&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;/home/ubuntu/cloud_sql_proxy -instances&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;kejyun-project:asia-east1:kejyun-mysql-asia-east&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;tcp:3306 -credential_file&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;/home/ubuntu/key/kejyun-cloud-sql-proxy.json&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;amp;&lt;/span&gt;
+&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;1&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;2379&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;d-使用-cloud-sql-proxy-連線到資料庫&#34;&gt;&lt;em&gt;&lt;strong&gt;D. 使用 Cloud SQL Proxy 連線到資料庫&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;因為 Cloud SQL 是在本機建立 Proxy，透過金鑰去驗證身份連線到資料庫，所以當我們要連線到資料庫時，是直接連線本機 IP 位置 &lt;code&gt;127.0.0.1&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;mysql -u root -h 127.0.0.1 -p
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;看到下列畫面表示可以正常透過 Cloud SQL Proxy 連線到資料庫了！！&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ mysql -u root -h 127.0.0.1 -p
+
+Enter password:
+Welcome to the MySQL monitor.  Commands end with &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;;&lt;/span&gt; or &lt;span style=&#34;color:#4e9a06&#34;&gt;\g&lt;/span&gt;.
+Your MySQL connection id is &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;37244&lt;/span&gt;
+Server version: 5.7.14-google-log &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;Google&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+Copyright &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;c&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt; 2000, 2018, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;help;&amp;#39;&lt;/span&gt; or &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;\h&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;for&lt;/span&gt; help. Type &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;\c&amp;#39;&lt;/span&gt; to clear the current input statement.
+
+mysql&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;設定開機自動開啟-cloud-sql-proxy&#34;&gt;設定開機自動開啟 Cloud SQL Proxy&lt;/h2&gt;
+&lt;p&gt;因為程式是設定固定連線到 &lt;code&gt;127.0.0.1&lt;/code&gt; 的 &lt;code&gt;Cloud SQL Proxy&lt;/code&gt; 去連線到資料庫，而我們的 &lt;code&gt;Cloud SQL Proxy&lt;/code&gt; 是用指令去執行的，所以當 &lt;em&gt;&lt;strong&gt;主機重新開機&lt;/strong&gt;&lt;/em&gt; 或 &lt;em&gt;&lt;strong&gt;Auto Scaling 開啟新機器&lt;/strong&gt;&lt;/em&gt; 時，&lt;code&gt;Cloud SQL Proxy&lt;/code&gt; 服務又會不見了，所以我們需要在主機開機能夠自動執行 &lt;code&gt;Cloud SQL Proxy&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;a-建立-cloud-sql-proxy-可執行-script-檔案&#34;&gt;&lt;em&gt;&lt;strong&gt;A. 建立 Cloud SQL Proxy 可執行 script 檔案&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;使用預設 &lt;code&gt;ubuntu&lt;/code&gt; 帳號身份建立 &lt;code&gt;vim /home/ubuntu/scripts/boot.sh&lt;/code&gt; 檔案&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;sudo su ubuntu -s /bin/bash
+vim /home/ubuntu/scripts/boot.sh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;在 &lt;code&gt;vim /home/ubuntu/scripts/boot.sh&lt;/code&gt; 檔案中加入 &lt;code&gt;Cloud SQL Proxy&lt;/code&gt; 指令&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;/home/ubuntu/cloud_sql_proxy -instances&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;kejyun-project:asia-east1:kejyun-mysql-asia-east&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;tcp:3306 -credential_file&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;/home/ubuntu/key/kejyun-cloud-sql-proxy.json&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;amp;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;將 &lt;code&gt;/home/ubuntu/scripts/boot.sh&lt;/code&gt; 設定為可執行檔&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;chmod +x /home/ubuntu/scripts/boot.sh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;b-加入開機自動執行&#34;&gt;&lt;em&gt;&lt;strong&gt;B. 加入開機自動執行&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;編輯開機自動執行指令檔案 &lt;code&gt;/etc/rc.local&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;vim /etc/rc.local
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;在最後方加入執行 &lt;code&gt;/home/ubuntu/scripts/boot.sh&lt;/code&gt; 檔案存擋即可&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;bash /home/ubuntu/scripts/boot.sh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;這樣在 &lt;em&gt;&lt;strong&gt;主機重新開機&lt;/strong&gt;&lt;/em&gt; 或 &lt;em&gt;&lt;strong&gt;Auto Scaling 開啟新機器&lt;/strong&gt;&lt;/em&gt; 時，就可以自動開啟 &lt;code&gt;Cloud SQL Proxy&lt;/code&gt; 了&lt;/p&gt;
+&lt;h2 id=&#34;自訂-cloud-sql-proxy-本地端-port&#34;&gt;自訂 Cloud SQL Proxy 本地端 port&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;./cloud_sql_proxy -instances&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;myProject:us-central1:myInstance&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;tcp:3306,myProject:us-central1:myInstance2&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;tcp:3307 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;amp;&lt;/span&gt;
+mysql -u myUser --host 127.0.0.1  --port &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;3307&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;參考資料&#34;&gt;參考資料&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=25XIGXbw_GY&#34;&gt;Connecting to Google Cloud SQL with the Cloud SQL Proxy - YouTube&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cloud.google.com/sql/docs/mysql/connect-admin-proxy&#34;&gt;使用 Cloud SQL Proxy 連結 mysql 用戶端  |  MySQL 適用的 Cloud SQL  |  Google Cloud&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cloud.google.com/sql/docs/mysql/connect-external-app&#34;&gt;從外部應用程式連線至 Cloud SQL  |  MySQL 適用的 Cloud SQL  |  Google Cloud&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://askubuntu.com/questions/814/how-to-run-scripts-on-start-up&#34;&gt;startup - How to run scripts on start up? - Ask Ubuntu&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cloud.google.com/sql/docs/mysql/sql-proxy&#34;&gt;About the Cloud SQL Proxy  |  Cloud SQL for MySQL  |  Google Cloud&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: 建立</title>
+      <link>https://gcp-for-newbie.kejyun.com/docs/google-cloud-storage/create/</link>
+      <pubDate>Mon, 03 May 2021 08:50:29 +0800</pubDate>
+      
+      <guid>https://gcp-for-newbie.kejyun.com/docs/google-cloud-storage/create/</guid>
+      <description>
+        
+        
+        &lt;p&gt;GCP 的 &lt;code&gt;Google Cloud Storage&lt;/code&gt; 就像是 AWS 的 &lt;code&gt;Simple Storage Service（S3）&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;1-建立-bucket&#34;&gt;1. 建立 bucket&lt;/h2&gt;
+&lt;h3 id=&#34;a-建立-google-cloud-storage-bucket&#34;&gt;&lt;em&gt;&lt;strong&gt;A. 建立 Google Cloud Storage Bucket&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;在 &lt;code&gt;Storage&lt;/code&gt; 的 &lt;code&gt;瀏覽器&lt;/code&gt; 頁面點選 &lt;code&gt;建立 Bucket&lt;/code&gt; 按鈕，即可開始建立 Google Cloud Storage Bucket&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/google-cloud-storage-create.png&#34; alt=&#34;建立 Google Cloud Storage Bucket&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;b-設定-google-cloud-storage-bucket&#34;&gt;&lt;em&gt;&lt;strong&gt;B. 設定 Google Cloud Storage Bucket&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;輸入 Bucket &lt;code&gt;名稱&lt;/code&gt;，並選擇儲存空間級別，依照自己的需求選擇需要備份的層級，可以先選擇 &lt;code&gt;Regional&lt;/code&gt; 並選擇 &lt;code&gt;asia-east1（台灣）&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/google-cloud-storage-setting.png&#34; alt=&#34;設定 Google Cloud Storage Bucket&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;c-建立-google-cloud-storage-bucket-完成&#34;&gt;&lt;em&gt;&lt;strong&gt;C. 建立 Google Cloud Storage Bucket 完成&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;建立完成後，就可以在頁面上看到剛剛建立的 Bucket 了&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/google-cloud-storage-create-finish.png&#34; alt=&#34;建立 Google Cloud Storage Bucket 完成&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;2-設定-bucket-api-存取憑證&#34;&gt;2. 設定 bucket API 存取憑證&lt;/h2&gt;
+&lt;p&gt;若要使用 &lt;code&gt;API&lt;/code&gt; 透過 &lt;code&gt;憑證&lt;/code&gt; 存取 Google Cloud Storage 的資料，可以至 &lt;a href=&#34;../apis-services/apis-services-README.md&#34;&gt;API 服務&lt;/a&gt; 設定需要的憑證即可&lt;/p&gt;
+&lt;h2 id=&#34;參考資料&#34;&gt;參考資料&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=jZ13GGJW1U4&#34;&gt;Google Cloud Storage Load Balancer with CDN - YouTube&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: 建立</title>
+      <link>https://gcp-for-newbie.kejyun.com/docs/google-compute-engine/auto-scaling/create/</link>
+      <pubDate>Mon, 03 May 2021 08:50:29 +0800</pubDate>
+      
+      <guid>https://gcp-for-newbie.kejyun.com/docs/google-compute-engine/auto-scaling/create/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;1-執行個體範本instance-templates&#34;&gt;1. 執行個體範本（Instance templates）&lt;/h2&gt;
+&lt;p&gt;GCP 的 &lt;code&gt;執行個體範本（Instance templates）&lt;/code&gt; 就像是 AWS 的 &lt;code&gt;Auto Scaling Launch Configurations&lt;/code&gt;，若要執行在 GCP Auto Scaling 必須先設定要執行的機器是哪一種，建立一個可執行的範本&lt;/p&gt;
+&lt;h3 id=&#34;a-建立執行個體範本instance-templates&#34;&gt;&lt;em&gt;&lt;strong&gt;A. 建立執行個體範本（Instance templates）&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;在 &lt;code&gt;執行個體範本&lt;/code&gt; 頁面點選 &lt;code&gt;建立執行個體範本&lt;/code&gt; 按鈕，即可開始建立 Auto Scaling 需要的 VM 範本&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/google-vm-instance-templates-create.png&#34; alt=&#34;建立執行個體範本（Instance templates）&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;b-設定執行個體範本&#34;&gt;&lt;em&gt;&lt;strong&gt;B. 設定執行個體範本&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;在設定執行個體範本頁面設定範本 &lt;code&gt;名稱&lt;/code&gt;，並選擇範本的 &lt;code&gt;機器類型&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;若建立的機器為 web 服務，則可以勾選允許 HTTP 及 HTTPS 流量&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/google-vm-instance-templates-create-setting.png&#34; alt=&#34;設定執行個體範本（Instance templates）&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;c-設定執行個體範本&#34;&gt;&lt;em&gt;&lt;strong&gt;C. 設定執行個體範本&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;在映像檔案可以選擇自己建立的映像檔案，並設定硬碟大小&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/google-vm-instance-templates-create-setting-images.png&#34; alt=&#34;設定執行個體範本（Instance templates）映像檔&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;d-設定執行個體範本開機指令碼&#34;&gt;&lt;em&gt;&lt;strong&gt;D. 設定執行個體範本開機指令碼&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;若有需要再開機時需要執行的程式可以在 &lt;code&gt;開機指令碼&lt;/code&gt; 輸入相關的 shell script&lt;/p&gt;
+&lt;p&gt;這樣在範本主機建立時就會執行此區塊的程式&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/google-vm-instance-templates-create-boot-scripts.png&#34; alt=&#34;設定執行個體範本（Instance templates）開機指令碼&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;e-完成設定執行個體範本&#34;&gt;&lt;em&gt;&lt;strong&gt;E. 完成設定執行個體範本&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;在完成設定後就可以看到 &lt;code&gt;執行個體範本&lt;/code&gt; 已經設定完成&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;範本設定不會被 GCP 收取任何費用&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;../images/google-vm-instance-templates-create-finish.png&#34; alt=&#34;完成設定執行個體範本（Instance templates）&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;2-執行個體群組instance-groups&#34;&gt;2. 執行個體群組（Instance groups）&lt;/h2&gt;
+&lt;p&gt;GCP 的 &lt;code&gt;執行個體群組（Instance groups）&lt;/code&gt; 就像是 AWS 的 &lt;code&gt;Auto Scaling Group&lt;/code&gt;，群組會依照 &lt;code&gt;執行個體範本（Instance templates）&lt;/code&gt; 的設定，自動配置（Auto scaling）機器&lt;/p&gt;
+&lt;h3 id=&#34;a-建立執行個體群組instance-groups&#34;&gt;&lt;em&gt;&lt;strong&gt;A. 建立執行個體群組（Instance groups）&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;在 &lt;code&gt;執行個體群組&lt;/code&gt; 頁面點選 &lt;code&gt;建立執行個體群組&lt;/code&gt; 按鈕，即可開始建立 Auto Scaling 需要的群組&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/google-vm-instance-group-create.png&#34; alt=&#34;建立執行個體群組（Instance groups）&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;b-設定執行個體群組&#34;&gt;&lt;em&gt;&lt;strong&gt;B. 設定執行個體群組&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;輸入執行個體群組 &lt;code&gt;名稱&lt;/code&gt;，以及這個群組的 VM 是否運行於 &lt;code&gt;多區域&lt;/code&gt;，區域可以選擇 &lt;code&gt;asia-east1（台灣）&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;在 &lt;code&gt;執行個體範本&lt;/code&gt; 選擇剛剛建立的執行個體範本即可&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/google-vm-instance-group-basic-setting.png&#34; alt=&#34;設定執行個體群組（Instance groups）&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;c-設定執行個體群組自動配置auto-scaling&#34;&gt;&lt;em&gt;&lt;strong&gt;C. 設定執行個體群組自動配置（Auto Scaling）&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;在 &lt;code&gt;自動配置（Auto Scaling）&lt;/code&gt; 的部分設定為 &lt;code&gt;開啟&lt;/code&gt;，並依照 &lt;code&gt;CPU 用量&lt;/code&gt; 去做擴展的判斷標準，目標是將 CPU 用量維持在 &lt;code&gt;60&lt;/code&gt; 以下，並設定擴展機器的下限與上限&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/google-vm-instance-group-auto-scaling-setting.png&#34; alt=&#34;設定執行個體群組自動配置（Auto Scaling）&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;d-設定執行個體群組健康狀態檢查health-check&#34;&gt;&lt;em&gt;&lt;strong&gt;D. 設定執行個體群組健康狀態檢查（Health Check）&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;輸入此健康狀態檢查的 &lt;code&gt;名稱&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;設定固定檢查主機的 &lt;code&gt;HTTP&lt;/code&gt; 通訊協定，通訊阜為 &lt;code&gt;80&lt;/code&gt;，檢查請求路徑為根目錄 &lt;code&gt;/&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;設定檢查時間間隔為 &lt;code&gt;5&lt;/code&gt; 秒，逾時時間間隔為 &lt;code&gt;5&lt;/code&gt; 秒&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/google-vm-instance-group-health-check.png&#34; alt=&#34;設定執行個體群組健康狀態檢查（Health Check）&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;e-建立執行個體群組完成&#34;&gt;&lt;em&gt;&lt;strong&gt;E. 建立執行個體群組完成&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;設定完後就可以開始建立 &lt;code&gt;執行個體群組（Instance groups）&lt;/code&gt;，建立完成後就可以看到下列畫面&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/google-vm-instance-group-create-finish.png&#34; alt=&#34;建立執行個體群組完成&#34;&gt;&lt;/p&gt;
+&lt;p&gt;建立完成後，主機就可以依照設定值，自行進行自動配置（Auto Scaling）了&lt;/p&gt;
+&lt;h2 id=&#34;參考資料&#34;&gt;參考資料&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=Gn7pGQYkKnA&#34;&gt;Google Cloud Load balancer &amp;amp; Autoscaling in ACTION!! (Udemy link below with discount code!) - YouTube&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

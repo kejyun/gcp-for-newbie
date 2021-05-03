@@ -1,0 +1,49 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GCP 菜雞修煉場 – G Suite</title>
+    <link>https://gcp-for-newbie.kejyun.com/tags/g-suite/</link>
+    <description>Recent content in G Suite on GCP 菜雞修煉場</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Mon, 03 May 2021 08:50:29 +0800</lastBuildDate>
+    
+	  <atom:link href="https://gcp-for-newbie.kejyun.com/tags/g-suite/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: G Suite</title>
+      <link>https://gcp-for-newbie.kejyun.com/docs/g-suite/</link>
+      <pubDate>Mon, 03 May 2021 08:50:29 +0800</pubDate>
+      
+      <guid>https://gcp-for-newbie.kejyun.com/docs/g-suite/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: 狀態除錯</title>
+      <link>https://gcp-for-newbie.kejyun.com/docs/g-suite/status/</link>
+      <pubDate>Mon, 03 May 2021 08:50:29 +0800</pubDate>
+      
+      <guid>https://gcp-for-newbie.kejyun.com/docs/g-suite/status/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;g-suite-狀態儀表板&#34;&gt;G Suite 狀態儀表板&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.google.com/appsstatus#hl=zh-TW&amp;amp;v=status&#34;&gt;G Suite Status Dashboard&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,112 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GCP 菜雞修煉場 – GCS</title>
+    <link>https://gcp-for-newbie.kejyun.com/tags/gcs/</link>
+    <description>Recent content in GCS on GCP 菜雞修煉場</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Mon, 03 May 2021 08:50:29 +0800</lastBuildDate>
+    
+	  <atom:link href="https://gcp-for-newbie.kejyun.com/tags/gcs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: 建立</title>
+      <link>https://gcp-for-newbie.kejyun.com/docs/google-cloud-storage/create/</link>
+      <pubDate>Mon, 03 May 2021 08:50:29 +0800</pubDate>
+      
+      <guid>https://gcp-for-newbie.kejyun.com/docs/google-cloud-storage/create/</guid>
+      <description>
+        
+        
+        &lt;p&gt;GCP 的 &lt;code&gt;Google Cloud Storage&lt;/code&gt; 就像是 AWS 的 &lt;code&gt;Simple Storage Service（S3）&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;1-建立-bucket&#34;&gt;1. 建立 bucket&lt;/h2&gt;
+&lt;h3 id=&#34;a-建立-google-cloud-storage-bucket&#34;&gt;&lt;em&gt;&lt;strong&gt;A. 建立 Google Cloud Storage Bucket&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;在 &lt;code&gt;Storage&lt;/code&gt; 的 &lt;code&gt;瀏覽器&lt;/code&gt; 頁面點選 &lt;code&gt;建立 Bucket&lt;/code&gt; 按鈕，即可開始建立 Google Cloud Storage Bucket&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/google-cloud-storage-create.png&#34; alt=&#34;建立 Google Cloud Storage Bucket&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;b-設定-google-cloud-storage-bucket&#34;&gt;&lt;em&gt;&lt;strong&gt;B. 設定 Google Cloud Storage Bucket&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;輸入 Bucket &lt;code&gt;名稱&lt;/code&gt;，並選擇儲存空間級別，依照自己的需求選擇需要備份的層級，可以先選擇 &lt;code&gt;Regional&lt;/code&gt; 並選擇 &lt;code&gt;asia-east1（台灣）&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/google-cloud-storage-setting.png&#34; alt=&#34;設定 Google Cloud Storage Bucket&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;c-建立-google-cloud-storage-bucket-完成&#34;&gt;&lt;em&gt;&lt;strong&gt;C. 建立 Google Cloud Storage Bucket 完成&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;建立完成後，就可以在頁面上看到剛剛建立的 Bucket 了&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/google-cloud-storage-create-finish.png&#34; alt=&#34;建立 Google Cloud Storage Bucket 完成&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;2-設定-bucket-api-存取憑證&#34;&gt;2. 設定 bucket API 存取憑證&lt;/h2&gt;
+&lt;p&gt;若要使用 &lt;code&gt;API&lt;/code&gt; 透過 &lt;code&gt;憑證&lt;/code&gt; 存取 Google Cloud Storage 的資料，可以至 &lt;a href=&#34;../apis-services/apis-services-README.md&#34;&gt;API 服務&lt;/a&gt; 設定需要的憑證即可&lt;/p&gt;
+&lt;h2 id=&#34;參考資料&#34;&gt;參考資料&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=jZ13GGJW1U4&#34;&gt;Google Cloud Storage Load Balancer with CDN - YouTube&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: 自訂網址</title>
+      <link>https://gcp-for-newbie.kejyun.com/docs/google-cloud-storage/custom-domain/</link>
+      <pubDate>Mon, 03 May 2021 08:50:29 +0800</pubDate>
+      
+      <guid>https://gcp-for-newbie.kejyun.com/docs/google-cloud-storage/custom-domain/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;參考資料&#34;&gt;參考資料&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://medium.com/@wolkesau/%E6%95%99%E5%AD%B8-%E4%BD%BF%E7%94%A8-google-cloud-storage-load-balancing-cloud-dns-lets-encrypt-%E5%BB%BA%E7%BD%AEhttps%E7%B6%B2%E7%AB%99-b7f159658dc4&#34;&gt;[教學] 使用 Google Clud Storage + Load balancing + Cloud DNS 建置https網站&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.user.today/gcs-hosting-static-website/&#34;&gt;用 Google Cloud Storage 免費放靜態網頁 – 要改的地方太多了，那就改天吧&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: 複製本地端檔案到 GCS</title>
+      <link>https://gcp-for-newbie.kejyun.com/docs/google-cloud-storage/copy-local-file/</link>
+      <pubDate>Mon, 03 May 2021 08:50:29 +0800</pubDate>
+      
+      <guid>https://gcp-for-newbie.kejyun.com/docs/google-cloud-storage/copy-local-file/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;安裝-gcloud-指令&#34;&gt;安裝 &lt;code&gt;gcloud&lt;/code&gt; 指令&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;curl https://sdk.cloud.google.com &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;|&lt;/span&gt; bash
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;color:#204a87&#34;&gt;exec&lt;/span&gt; -l &lt;span style=&#34;color:#000&#34;&gt;$SHELL&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;gcloud init
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;複製檔案到-gcs&#34;&gt;複製檔案到 GCS&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;本機圖片複製至 GCS&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;gsutil cp -r &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt;local_file_path&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;}&lt;/span&gt; gs://&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt;bucket-name&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;}&lt;/span&gt;/&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt;gcs_file_path&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;gsutil cp -r &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt;本地端路徑&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;}&lt;/span&gt;  gs://&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt;bucket 名稱&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;}&lt;/span&gt;/&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt;GCS 路徑&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;略過已存在檔案並設定為公開&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;gsutil -m cp -n -a public-read -R &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt;local_file_path&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;}&lt;/span&gt;  gs://&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt;bucket-name&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;}&lt;/span&gt;/&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt;gcs_file_path&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;gsutil -m cp -n -a public-read -R &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt;本地端路徑&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;}&lt;/span&gt;  gs://&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt;bucket 名稱&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;}&lt;/span&gt;/&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt;GCS 路徑&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;查詢-gcs-檔案數&#34;&gt;查詢 GCS 檔案數&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;gsutil ls -lR gs://&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt;bucket-name&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;}&lt;/span&gt;/&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt;gcs_file_path&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;gsutil ls -lR gs://&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt;bucket 名稱&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;}&lt;/span&gt;/&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt;GCS 路徑&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;參考資料&#34;&gt;參考資料&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://cloud.google.com/storage/docs/gsutil_install?hl=zh-tw#linux&#34;&gt;安裝 gsutil  |  Cloud Storage  |  Google Cloud&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Google Cloud Storage (GCS)</title>
+      <link>https://gcp-for-newbie.kejyun.com/docs/google-cloud-storage/</link>
+      <pubDate>Mon, 03 May 2021 08:50:29 +0800</pubDate>
+      
+      <guid>https://gcp-for-newbie.kejyun.com/docs/google-cloud-storage/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Google Cloud Storage 就像 AWS S3，可以透過 GCS 儲存自己的靜態檔案&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

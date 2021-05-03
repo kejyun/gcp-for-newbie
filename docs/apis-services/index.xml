@@ -1,0 +1,40 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GCP 菜雞修煉場 – API 服務</title>
+    <link>https://gcp-for-newbie.kejyun.com/docs/apis-services/</link>
+    <description>Recent content in API 服務 on GCP 菜雞修煉場</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Mon, 03 May 2021 08:50:29 +0800</lastBuildDate>
+    
+	  <atom:link href="https://gcp-for-newbie.kejyun.com/docs/apis-services/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: 建立</title>
+      <link>https://gcp-for-newbie.kejyun.com/docs/apis-services/create/</link>
+      <pubDate>Mon, 03 May 2021 08:50:29 +0800</pubDate>
+      
+      <guid>https://gcp-for-newbie.kejyun.com/docs/apis-services/create/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;1-api-服務憑證&#34;&gt;1. API 服務憑證&lt;/h2&gt;
+&lt;h3 id=&#34;a-建立憑證credentials&#34;&gt;&lt;em&gt;&lt;strong&gt;A. 建立憑證（Credentials）&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;在 &lt;code&gt;API 服務&lt;/code&gt; 頁面的 &lt;code&gt;憑證&lt;/code&gt; 頁簽點選 &lt;code&gt;建立憑證&lt;/code&gt; 按鈕，選擇建立 &lt;code&gt;服務帳戶金鑰&lt;/code&gt; 即可開始建立憑證&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/google-apis-services-create-service-account-key.png&#34; alt=&#34;建立憑證（Credentials）&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;b-設定憑證&#34;&gt;&lt;em&gt;&lt;strong&gt;B. 設定憑證&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;在憑證設定頁面，輸入憑證 &lt;code&gt;帳號名稱&lt;/code&gt;，並選擇服務帳號可以存取的權限 &lt;code&gt;角色&lt;/code&gt; 是什麼，&lt;code&gt;金鑰類型&lt;/code&gt; 選擇用 &lt;code&gt;JSON&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/google-apis-services-create-service-account-key-setting.png&#34; alt=&#34;設定憑證&#34;&gt;&lt;/p&gt;
+&lt;p&gt;設定完後點選 &lt;code&gt;建立&lt;/code&gt; 按鈕，下載憑證即可立即使用&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,37 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GCP 菜雞修煉場 – 自訂網址</title>
+    <link>https://gcp-for-newbie.kejyun.com/tags/%E8%87%AA%E8%A8%82%E7%B6%B2%E5%9D%80/</link>
+    <description>Recent content in 自訂網址 on GCP 菜雞修煉場</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Mon, 03 May 2021 08:50:29 +0800</lastBuildDate>
+    
+	  <atom:link href="https://gcp-for-newbie.kejyun.com/tags/%E8%87%AA%E8%A8%82%E7%B6%B2%E5%9D%80/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: 自訂網址</title>
+      <link>https://gcp-for-newbie.kejyun.com/docs/google-cloud-storage/custom-domain/</link>
+      <pubDate>Mon, 03 May 2021 08:50:29 +0800</pubDate>
+      
+      <guid>https://gcp-for-newbie.kejyun.com/docs/google-cloud-storage/custom-domain/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;參考資料&#34;&gt;參考資料&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://medium.com/@wolkesau/%E6%95%99%E5%AD%B8-%E4%BD%BF%E7%94%A8-google-cloud-storage-load-balancing-cloud-dns-lets-encrypt-%E5%BB%BA%E7%BD%AEhttps%E7%B6%B2%E7%AB%99-b7f159658dc4&#34;&gt;[教學] 使用 Google Clud Storage + Load balancing + Cloud DNS 建置https網站&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.user.today/gcs-hosting-static-website/&#34;&gt;用 Google Cloud Storage 免費放靜態網頁 – 要改的地方太多了，那就改天吧&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
