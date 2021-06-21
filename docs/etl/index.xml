@@ -1,0 +1,100 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GCP 菜雞修煉場 – ETL</title>
+    <link>https://gcp-for-newbie.kejyun.com/docs/etl/</link>
+    <description>Recent content in ETL on GCP 菜雞修煉場</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Sat, 15 May 2021 08:50:29 +0800</lastBuildDate>
+    
+	  <atom:link href="https://gcp-for-newbie.kejyun.com/docs/etl/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: ETL: Data Fusion</title>
+      <link>https://gcp-for-newbie.kejyun.com/docs/etl/data-fusion/</link>
+      <pubDate>Sat, 15 May 2021 08:50:29 +0800</pubDate>
+      
+      <guid>https://gcp-for-newbie.kejyun.com/docs/etl/data-fusion/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;plugin-套件&#34;&gt;Plugin 套件&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;類別&lt;/th&gt;
+&lt;th&gt;簡述&lt;/th&gt;
+&lt;th&gt;說明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Sources&lt;/td&gt;
+&lt;td&gt;資料來源&lt;/td&gt;
+&lt;td&gt;解析的資料來源，e.g. &lt;code&gt;DB&lt;/code&gt;、&lt;code&gt;檔案&lt;/code&gt;、&lt;code&gt;串流資料&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Transforms&lt;/td&gt;
+&lt;td&gt;資料轉換&lt;/td&gt;
+&lt;td&gt;將資料來源做格式型別等等轉換&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Analytics&lt;/td&gt;
+&lt;td&gt;資料分析&lt;/td&gt;
+&lt;td&gt;將資料來源做 join, group by 分析運算&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Actions&lt;/td&gt;
+&lt;td&gt;自訂動作&lt;/td&gt;
+&lt;td&gt;在取得 &lt;code&gt;Source 資料來源&lt;/code&gt; 前，先對資料做操作處理，但不會將資料丟給 &lt;code&gt;Source 資料來源&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Sinks&lt;/td&gt;
+&lt;td&gt;資料儲存&lt;/td&gt;
+&lt;td&gt;資料處理過後最後儲存的地方，可以是 &lt;code&gt;DB&lt;/code&gt;、&lt;code&gt;檔案&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Error collectors&lt;/td&gt;
+&lt;td&gt;錯誤搜集&lt;/td&gt;
+&lt;td&gt;資料處理發生錯誤時的錯誤紀錄&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;transform-資料轉換&#34;&gt;Transform 資料轉換&lt;/h2&gt;
+&lt;h3 id=&#34;wrangle&#34;&gt;Wrangle&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A interactive tool for data cleansing and transformation.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;參考資料&#34;&gt;參考資料&lt;/h2&gt;
+&lt;h3 id=&#34;教學影片&#34;&gt;教學影片&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=1QhJDsYQTfM&#34;&gt;QwikQuest with Data Fusion - Building Batch Pipelines in Cloud Data Fusion - YouTube&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://google.qwiklabs.com/focuses/12363?parent=catalog&#34;&gt;Building Batch Pipelines in Cloud Data Fusion | Qwiklabs&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;文件&#34;&gt;文件&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://cloud.google.com/data-fusion/docs/tutorials&#34;&gt;Tutorials  |  Cloud Data Fusion 說明文件  |  Google Cloud&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;官方&#34;&gt;官方&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://cloud.google.com/data-fusion&#34;&gt;Cloud Data Fusion  |  Google Cloud&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://cloud.google.com/data-fusion/docs/concepts/overview&#34;&gt;What is Cloud Data Fusion?  |  Cloud Data Fusion 說明文件  |  Google Cloud&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -5,7 +5,7 @@
     <description>Recent content in 新手教學 on GCP 菜雞修煉場</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Mon, 03 May 2021 08:50:29 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 21 Jun 2021 08:50:29 +0800</lastBuildDate>
     
 	  <atom:link href="https://gcp-for-newbie.kejyun.com/tags/%E6%96%B0%E6%89%8B%E6%95%99%E5%AD%B8/index.xml" rel="self" type="application/rss+xml" />
     
@@ -25,6 +25,45 @@
         
         
         
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: ETL: Data Fusion 安裝 PostgreSQL Driver</title>
+      <link>https://gcp-for-newbie.kejyun.com/docs/etl/data-fusion/install-postgresql-database/</link>
+      <pubDate>Fri, 18 Jun 2021 08:50:29 +0800</pubDate>
+      
+      <guid>https://gcp-for-newbie.kejyun.com/docs/etl/data-fusion/install-postgresql-database/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;簡述&#34;&gt;簡述&lt;/h2&gt;
+&lt;p&gt;GCP 的 Data Fusion 資料庫連線有支援跨雲端，所以若資料庫不是放在 GCP 的話，像是 AWS、Azure 之類的雲端服務，也都可以順利連線&lt;/p&gt;
+&lt;h2 id=&#34;加入資料庫連練線&#34;&gt;加入資料庫連練線&lt;/h2&gt;
+&lt;p&gt;在 Cloud Data Fusion 首頁選擇 &lt;code&gt;Wrangle&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/install-postgresql-database/etl-database-postgresql-1.png&#34; alt=&#34;ETL Install PostgreSQL&#34;&gt;&lt;/p&gt;
+&lt;p&gt;在選擇 &lt;code&gt;Wrangle&lt;/code&gt; 的資料來源中，左下方點選 &lt;code&gt;Add Connection&lt;/code&gt;，並選擇 &lt;code&gt;Database&lt;/code&gt; 選項&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/install-postgresql-database/etl-database-postgresql-2.png&#34; alt=&#34;ETL Install PostgreSQL&#34;&gt;&lt;/p&gt;
+&lt;p&gt;在跳出的資料庫選單中，可以選擇 &lt;code&gt;PostgreSQL (v7.0 and later)&lt;/code&gt; 下方的 &lt;code&gt;Hub&lt;/code&gt; 連結去安裝 Cloud Data Fusion 的驅動程式&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;若是 6.x 以前的版本則是需要自行上傳 driver&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;../images/install-postgresql-database/etl-database-postgresql-3.png&#34; alt=&#34;ETL Install PostgreSQL&#34;&gt;&lt;/p&gt;
+&lt;p&gt;安裝完後會看到 Driver 會顯示已經安裝完成 &lt;code&gt;Installed&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/install-postgresql-database/etl-database-postgresql-4.png&#34; alt=&#34;ETL Install PostgreSQL&#34;&gt;&lt;/p&gt;
+&lt;p&gt;點選 &lt;code&gt;PostgreSQL (v7.0 and later)&lt;/code&gt;，輸入連線的帳號密碼及相關連線資訊後，點選 &lt;code&gt;Add Connection&lt;/code&gt; 就可以加入此資料庫連線&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;也可以點選 &lt;code&gt;Advanced&lt;/code&gt; 看看進階設定是用 jdbc 連線方式&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;../images/install-postgresql-database/etl-database-postgresql-5-1.png&#34; alt=&#34;ETL Install PostgreSQL&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/install-postgresql-database/etl-database-postgresql-5-2.png&#34; alt=&#34;ETL Install PostgreSQL&#34;&gt;&lt;/p&gt;
+&lt;p&gt;加入連線完成後，就可以看到在左側 &lt;code&gt;Database&lt;/code&gt; 頁籤看到此資料庫了，點選後就可以在右側看到資料庫的相關資料表了&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/install-postgresql-database/etl-database-postgresql-6.png&#34; alt=&#34;ETL Install PostgreSQL&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;參考資料&#34;&gt;參考資料&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://cloud.google.com/data-fusion/docs/how-to/reading-from-postgresql&#34;&gt;Reading from a PostgreSQL database  |  Cloud Data Fusion  |  Google Cloud&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
       </description>
     </item>
     
@@ -526,6 +565,182 @@ mysql -u myUser --host 127.0.0.1  --port &lt;span style=&#34;color:#0000cf;font-
     </item>
     
     <item>
+      <title>Docs: ETL: Data Fusion 轉換資料至 PostgreSQL</title>
+      <link>https://gcp-for-newbie.kejyun.com/docs/etl/data-fusion/sink-source-to-postgresql/</link>
+      <pubDate>Mon, 21 Jun 2021 08:50:29 +0800</pubDate>
+      
+      <guid>https://gcp-for-newbie.kejyun.com/docs/etl/data-fusion/sink-source-to-postgresql/</guid>
+      <description>
+        
+        
+        &lt;p&gt;資料透過 Data Fusion 處理過後，將處理過的資料存至 PostgreSQL&lt;/p&gt;
+&lt;h2 id=&#34;選擇資料來源&#34;&gt;選擇資料來源&lt;/h2&gt;
+&lt;p&gt;點選 &lt;code&gt;Wrangler&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/sink-source-to-postgresql/etl-sink-postgresql-1.png&#34; alt=&#34;ETL sink source to PostgreSQL&#34;&gt;&lt;/p&gt;
+&lt;p&gt;在左側的資料來源選擇你的資料來源&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Database&lt;/li&gt;
+&lt;li&gt;Kafka&lt;/li&gt;
+&lt;li&gt;S3&lt;/li&gt;
+&lt;li&gt;Google Cloud Storage&lt;/li&gt;
+&lt;li&gt;Google BigQuery&lt;/li&gt;
+&lt;li&gt;Google Cloud Spanner&lt;/li&gt;
+&lt;li&gt;ADLS Handler&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;我這裡是選擇 &lt;code&gt;Database&lt;/code&gt; 當作我要轉換資料的資料來源，點選後在右側選擇要轉換的資料表&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/sink-source-to-postgresql/etl-sink-postgresql-2.png&#34; alt=&#34;ETL sink source to PostgreSQL&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;使用-wrangler-做資料轉換&#34;&gt;使用 Wrangler 做資料轉換&lt;/h2&gt;
+&lt;p&gt;選擇完資料表後會到 &lt;code&gt;Wrangler&lt;/code&gt; 資料轉換頁，可以點選上方欄位下拉選單，對資料進行解析或變更資料類型&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/sink-source-to-postgresql/etl-sink-postgresql-3.png&#34; alt=&#34;ETL sink source to PostgreSQL&#34;&gt;&lt;/p&gt;
+&lt;p&gt;這裡因為 Sink 目標的資料表的欄位名稱是不同的，所以可以直接在上方將欄位名稱做異動變更&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;在 Wrangler 異動的任何資料不會去影響到原本來源資料庫的資料，Wrangler 會將資料擷取下來後在額外進行處理，而不會直接異動原始資料&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;../images/sink-source-to-postgresql/etl-sink-postgresql-4.png&#34; alt=&#34;ETL sink source to PostgreSQL&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/sink-source-to-postgresql/etl-sink-postgresql-5.png&#34; alt=&#34;ETL sink source to PostgreSQL&#34;&gt;&lt;/p&gt;
+&lt;p&gt;欄位變更完後點選右上方 &lt;code&gt;Create a Pipeline&lt;/code&gt;，然後在彈跳出的視窗點選 &lt;code&gt;Batch pipeline&lt;/code&gt; 建立資料解析流程&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/sink-source-to-postgresql/etl-sink-postgresql-6.png&#34; alt=&#34;ETL sink source to PostgreSQL&#34;&gt;&lt;/p&gt;
+&lt;p&gt;建立完成後會出現 Source 是剛剛選擇的資料庫，而點選 Wrangler 的 &lt;code&gt;Properties&lt;/code&gt; 可以看到剛剛做的異動&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/sink-source-to-postgresql/etl-sink-postgresql-7.png&#34; alt=&#34;ETL sink source to PostgreSQL&#34;&gt;&lt;/p&gt;
+&lt;p&gt;異動的 Scripts 會寫在下方&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-wrangler&#34; data-lang=&#34;wrangler&#34;&gt;keep id,english_given_name,english_family_name,created_at,updated_at
+rename english_given_name english_first_name
+rename english_family_name english_last_name
+rename created_at signup_at
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;再重新點選 &lt;code&gt;WRANGLE&lt;/code&gt; 按鈕可以回去原本的資料異動頁面&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/sink-source-to-postgresql/etl-sink-postgresql-8.png&#34; alt=&#34;ETL sink source to PostgreSQL&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;變更資料來源-sql&#34;&gt;變更資料來源 SQL&lt;/h2&gt;
+&lt;p&gt;點選資料來源 &lt;code&gt;Database&lt;/code&gt; 的 &lt;code&gt;Properties&lt;/code&gt; 按鈕可以做資料庫來源的細部設定&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/sink-source-to-postgresql/etl-sink-postgresql-9.png&#34; alt=&#34;ETL sink source to PostgreSQL&#34;&gt;&lt;/p&gt;
+&lt;p&gt;在下方可以看到 &lt;code&gt;Connection String&lt;/code&gt;，格式會長的像這樣&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;jdbc:postgresql://{ip-address}:{port}/{database-name}&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;jdbc:postgresql://1.1.1.1:5432/etl_database&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;而在下方的 &lt;code&gt;Import Query&lt;/code&gt; 可以看到資料來源撈取的 SQL 語法&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/sink-source-to-postgresql/etl-sink-postgresql-10.png&#34; alt=&#34;ETL sink source to PostgreSQL&#34;&gt;&lt;/p&gt;
+&lt;p&gt;資料來源的 SQL 語法可以自行做異動&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;SELECT&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;FROM&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;employee&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;WHERE&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;created_at&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;now&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;AND&lt;/span&gt; &lt;span style=&#34;color:#a40000&#34;&gt;$&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;CONDITIONS&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;../images/sink-source-to-postgresql/etl-sink-postgresql-11.png&#34; alt=&#34;ETL sink source to PostgreSQL&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;設定資料儲存目標-database&#34;&gt;設定資料儲存目標 Database&lt;/h2&gt;
+&lt;p&gt;當資料處理完成後，可以點選左方的 &lt;code&gt;Sink&lt;/code&gt; 頁籤，點選 &lt;code&gt;Database&lt;/code&gt; 當作 Sink 的目標&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/sink-source-to-postgresql/etl-sink-postgresql-12.png&#34; alt=&#34;ETL sink source to PostgreSQL&#34;&gt;&lt;/p&gt;
+&lt;p&gt;將 &lt;code&gt;Wrangler&lt;/code&gt; 處理完後的資料拉選至 &lt;code&gt;Sink Database&lt;/code&gt;，可以看到像下方的樣子，點選 &lt;code&gt;Sink Database&lt;/code&gt; 的 &lt;code&gt;Properties&lt;/code&gt; 設定 Sink 資料庫&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/sink-source-to-postgresql/etl-sink-postgresql-13.png&#34; alt=&#34;ETL sink source to PostgreSQL&#34;&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;類別&lt;/th&gt;
+&lt;th&gt;簡述&lt;/th&gt;
+&lt;th&gt;範例&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Plugin Name&lt;/td&gt;
+&lt;td&gt;套件名稱&lt;/td&gt;
+&lt;td&gt;postgresql&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Plugin Type&lt;/td&gt;
+&lt;td&gt;套件類型&lt;/td&gt;
+&lt;td&gt;jdbc&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Plugin Type&lt;/td&gt;
+&lt;td&gt;套件類型&lt;/td&gt;
+&lt;td&gt;jdbc&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Connection String&lt;/td&gt;
+&lt;td&gt;連線字串&lt;/td&gt;
+&lt;td&gt;jdbc:postgresql://{ip-address}:{port}/{database-name}&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Table Name&lt;/td&gt;
+&lt;td&gt;資料表名稱&lt;/td&gt;
+&lt;td&gt;etl_table_name&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Columns&lt;/td&gt;
+&lt;td&gt;欄位名稱&lt;/td&gt;
+&lt;td&gt;Input Schema 對應的欄位名稱&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;img src=&#34;../images/sink-source-to-postgresql/etl-sink-postgresql-14.png&#34; alt=&#34;ETL sink source to PostgreSQL&#34;&gt;&lt;/p&gt;
+&lt;p&gt;設定完資料對應後，設定連線的帳號密碼及交易&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;類別&lt;/th&gt;
+&lt;th&gt;簡述&lt;/th&gt;
+&lt;th&gt;說明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Username&lt;/td&gt;
+&lt;td&gt;資料庫帳號&lt;/td&gt;
+&lt;td&gt;db account&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Password&lt;/td&gt;
+&lt;td&gt;資料庫密碼&lt;/td&gt;
+&lt;td&gt;db password&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Enable Auto-Commit&lt;/td&gt;
+&lt;td&gt;自動 commit&lt;/td&gt;
+&lt;td&gt;postgresql 僅需設定為 False&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Column Name Case&lt;/td&gt;
+&lt;td&gt;欄位名稱大小寫&lt;/td&gt;
+&lt;td&gt;預設不變更欄位名稱大小寫: No change&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Transaction Isolation Level&lt;/td&gt;
+&lt;td&gt;交易層級&lt;/td&gt;
+&lt;td&gt;TRANSACTION_SERIALIZABLE&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;img src=&#34;../images/sink-source-to-postgresql/etl-sink-postgresql-15.png&#34; alt=&#34;ETL sink source to PostgreSQL&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;測試執行&#34;&gt;測試執行&lt;/h2&gt;
+&lt;p&gt;設定完成後，在上方點選 &lt;code&gt;Preview&lt;/code&gt; 按鈕進行預先執行，確認整個邏輯從頭到尾是否能正常運行&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/sink-source-to-postgresql/etl-sink-postgresql-16.png&#34; alt=&#34;ETL sink source to PostgreSQL&#34;&gt;&lt;/p&gt;
+&lt;p&gt;點選完 &lt;code&gt;Preview&lt;/code&gt; 後點選 &lt;code&gt;Run&lt;/code&gt; 進行測試&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/sink-source-to-postgresql/etl-sink-postgresql-17.png&#34; alt=&#34;ETL sink source to PostgreSQL&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/sink-source-to-postgresql/etl-sink-postgresql-18.png&#34; alt=&#34;ETL sink source to PostgreSQL&#34;&gt;&lt;/p&gt;
+&lt;p&gt;測試成功會看到上方顯示 &lt;code&gt;The preview of the pipeline has completed successfully&lt;/code&gt; 的訊息，點選下方的 &lt;code&gt;Preview Data&lt;/code&gt; 選項，可以預覽整個測試流程的 input 及 output 資料&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/sink-source-to-postgresql/etl-sink-postgresql-19.png&#34; alt=&#34;ETL sink source to PostgreSQL&#34;&gt;&lt;/p&gt;
+&lt;p&gt;下方是 Sink Database 的 &lt;code&gt;Preview Data&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/sink-source-to-postgresql/etl-sink-postgresql-20.png&#34; alt=&#34;ETL sink source to PostgreSQL&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;設定部署&#34;&gt;設定部署&lt;/h2&gt;
+&lt;p&gt;重新點選 &lt;code&gt;Preview&lt;/code&gt; 按鈕，離開 Preview 模式，點選左上方的 &lt;code&gt;Name your pipeline&lt;/code&gt; 命名此 pipeline，pipeline 要有名稱才可以順利的 Deploy&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/sink-source-to-postgresql/etl-sink-postgresql-21.png&#34; alt=&#34;ETL sink source to PostgreSQL&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/sink-source-to-postgresql/etl-sink-postgresql-22.png&#34; alt=&#34;ETL sink source to PostgreSQL&#34;&gt;&lt;/p&gt;
+&lt;p&gt;命名完成後點選 &lt;code&gt;Deploy&lt;/code&gt; 按鈕將此 pipeline 部署出去&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/sink-source-to-postgresql/etl-sink-postgresql-23.png&#34; alt=&#34;ETL sink source to PostgreSQL&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;開始部署&#34;&gt;開始部署&lt;/h2&gt;
+&lt;p&gt;部署出去後，可以點選上方的 &lt;code&gt;Run&lt;/code&gt; 按鈕開始執行&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/sink-source-to-postgresql/etl-sink-postgresql-24.png&#34; alt=&#34;ETL sink source to PostgreSQL&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/sink-source-to-postgresql/etl-sink-postgresql-25.png&#34; alt=&#34;ETL sink source to PostgreSQL&#34;&gt;&lt;/p&gt;
+&lt;p&gt;部署完成後，可以看到 &lt;code&gt;Status&lt;/code&gt; 顯示為 &lt;code&gt;Succeeded&lt;/code&gt;，在下方也會顯示輸出的資料列有多少&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/sink-source-to-postgresql/etl-sink-postgresql-26.png&#34; alt=&#34;ETL sink source to PostgreSQL&#34;&gt;&lt;/p&gt;
+&lt;p&gt;這樣就完成了整個 ETL 的資料擷取的部署流程了，資料可以順利的從 &lt;code&gt;Source 來源&lt;/code&gt; 轉換到 &lt;code&gt;Sink 資料庫&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;參考資料&#34;&gt;參考資料&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=5x2nUq7YA-4&#34;&gt;QwikQuest with Data Fusion - Building Realtime Pipelines In Cloud Data Fusion&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: http 301 轉址至 https</title>
       <link>https://gcp-for-newbie.kejyun.com/docs/google-compute-engine/load-balancer/http-301-to-https/</link>
       <pubDate>Mon, 03 May 2021 08:50:29 +0800</pubDate>
@@ -671,6 +886,54 @@ mysql -u myUser --host 127.0.0.1  --port &lt;span style=&#34;color:#0000cf;font-
 &lt;li&gt;&lt;a href=&#34;https://cloud.google.com/compute/docs/instances/preemptible&#34;&gt;Preemptible VM Instances  |  Compute Engine Documentation  |  Google Cloud&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://cloud.google.com/preemptible-vms/&#34;&gt;先佔 VM - 運算執行個體  |  Google Cloud&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: ETL: Data Fusion Join 資料來源</title>
+      <link>https://gcp-for-newbie.kejyun.com/docs/etl/data-fusion/join-source/</link>
+      <pubDate>Mon, 21 Jun 2021 08:50:29 +0800</pubDate>
+      
+      <guid>https://gcp-for-newbie.kejyun.com/docs/etl/data-fusion/join-source/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Data Fusion 可以針對不同的資料來源去進行 Join&lt;/p&gt;
+&lt;h2 id=&#34;加入-join-分析&#34;&gt;加入 Join 分析&lt;/h2&gt;
+&lt;p&gt;在左側選單點選 &lt;code&gt;Analytics&lt;/code&gt; 頁籤，並點選 &lt;code&gt;Joiner&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/join-source/etl-join-analytics-1.png&#34; alt=&#34;ETL join source&#34;&gt;&lt;/p&gt;
+&lt;p&gt;將多個 &lt;code&gt;Wrangler&lt;/code&gt; 處理過後的資料連結至 &lt;code&gt;Joiner&lt;/code&gt;，並將 &lt;code&gt;Joiner&lt;/code&gt; 處理後的結果連結至 &lt;code&gt;Sink 資料庫&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/join-source/etl-join-analytics-2.png&#34; alt=&#34;ETL join source&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;設定-joiner&#34;&gt;設定 &lt;code&gt;Joiner&lt;/code&gt;&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;類別&lt;/th&gt;
+&lt;th&gt;簡述&lt;/th&gt;
+&lt;th&gt;說明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Fields&lt;/td&gt;
+&lt;td&gt;來源名稱&lt;/td&gt;
+&lt;td&gt;Join 的資料從哪裡來&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Join Type&lt;/td&gt;
+&lt;td&gt;Join 類型&lt;/td&gt;
+&lt;td&gt;支援 inner 及 outer join&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Join Condition&lt;/td&gt;
+&lt;td&gt;Join 條件&lt;/td&gt;
+&lt;td&gt;要 join 哪些欄位&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;img src=&#34;../images/join-source/etl-join-analytics-3.png&#34; alt=&#34;ETL join source&#34;&gt;&lt;/p&gt;
+&lt;p&gt;設定完成後就可以將不同來源的資料 Join 起來並 ETL 轉換至 Sink 資料庫&lt;/p&gt;
 
       </description>
     </item>
@@ -944,6 +1207,89 @@ kejyun@kejyun-dev:~$
     </item>
     
     <item>
+      <title>Docs: ETL: Data Fusion JavaScript 轉換資料 Transform</title>
+      <link>https://gcp-for-newbie.kejyun.com/docs/etl/data-fusion/javascript-transform/</link>
+      <pubDate>Mon, 21 Jun 2021 08:50:29 +0800</pubDate>
+      
+      <guid>https://gcp-for-newbie.kejyun.com/docs/etl/data-fusion/javascript-transform/</guid>
+      <description>
+        
+        
+        &lt;p&gt;除了用 &lt;code&gt;Wrangler&lt;/code&gt; 去做資料的處理，也可以使用 JavaScript 自訂處理的流程&lt;/p&gt;
+&lt;h2 id=&#34;加入-javascript-transform&#34;&gt;加入 JavaScript Transform&lt;/h2&gt;
+&lt;p&gt;在左側選單點選 &lt;code&gt;Transform&lt;/code&gt; 頁籤，並點選 &lt;code&gt;JavaScript&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/javascript-transform/javascript-transform-1.png&#34; alt=&#34;ETL JavaScript Transform 轉換資料&#34;&gt;&lt;/p&gt;
+&lt;p&gt;將 &lt;code&gt;Source 資料來源&lt;/code&gt; 連結至 &lt;code&gt;JavaScript Transform&lt;/code&gt;，並將 &lt;code&gt;JavaScript Transform&lt;/code&gt; 連結至 &lt;code&gt;Sink 目標資料庫&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/javascript-transform/javascript-transform-2.png&#34; alt=&#34;ETL JavaScript Transform 轉換資料&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;設定-javascript-transform&#34;&gt;設定 JavaScript Transform&lt;/h2&gt;
+&lt;p&gt;在設定 JavaScript Transform 時可以看到下方有預設的 Scripts&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/javascript-transform/javascript-transform-3.png&#34; alt=&#34;ETL JavaScript Transform 轉換資料&#34;&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;變數名稱&lt;/th&gt;
+&lt;th&gt;簡述&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;input&lt;/td&gt;
+&lt;td&gt;來源資料&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;emitter&lt;/td&gt;
+&lt;td&gt;處理資料&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;context&lt;/td&gt;
+&lt;td&gt;Transform 設定&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;/**
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt; * @summary Transforms the provided input record into zero or more output records or errors.
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt; * Input records are available in JavaScript code as JSON objects.
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt; * @param input an object that contains the input record as a JSON.   e.g. to access a field called &amp;#39;total&amp;#39; from the input record, use input.total.
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt; * @param emitter an object that can be used to emit zero or more records (using the emitter.emit() method) or errors (using the emitter.emitError() method)
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt; * @param context an object that provides access to:
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt; *            1. CDAP Metrics - context.getMetrics().count(&amp;#39;output&amp;#39;, 1);
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt; *            2. CDAP Logs - context.getLogger().debug(&amp;#39;Received a record&amp;#39;);
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt; *            3. Lookups - context.getLookup(&amp;#39;blacklist&amp;#39;).lookup(input.id); or
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt; *            4. Runtime Arguments - context.getArguments().get(&amp;#39;priceThreshold&amp;#39;)
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt; */&lt;/span&gt;
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;transform&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;input&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;emitter&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;context&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+  &lt;span style=&#34;color:#000&#34;&gt;emitter&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;emit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;input&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;);&lt;/span&gt;
+&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;使用-javascript-撰寫轉換程式&#34;&gt;使用 JavaScript 撰寫轉換程式&lt;/h2&gt;
+&lt;p&gt;為了產生不重複的主鍵，使用 &lt;code&gt;Math.random().toString(36).substring(2, 15)&lt;/code&gt; 產生隨機的編號並存入 id 欄位&lt;/p&gt;
+&lt;p&gt;指定欄位需要設定固定的資料，可以直接設定 &lt;code&gt;custom_field&lt;/code&gt; 的資料皆為 &lt;code&gt;custom-value&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;並將傳入的資料設定至指定的欄位，最後使用 &lt;code&gt;emitter.emit(transform_input)&lt;/code&gt; 將資料輸出&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;transform&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;input&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;emitter&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;context&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+  &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// 產生隨機編號
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;  &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;id&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;test-&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#204a87&#34;&gt;Math&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;random&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;().&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;toString&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;36&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;).&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;substring&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;15&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;);&lt;/span&gt;
+
+  &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// 轉換的資料
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;  &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;transform_input&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;id&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+  	&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;custom_field&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;custom-value&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+    &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;english_first_name&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;input&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;en_first_name&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+    &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;english_last_name&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;input&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;en_last_name&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+    &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;age&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;input&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;age&lt;/span&gt;
+  &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;};&lt;/span&gt;
+
+  &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// 輸出轉換資料
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;  &lt;span style=&#34;color:#000&#34;&gt;emitter&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;emit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;transform_input&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;);&lt;/span&gt;
+&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;設定完後，在右方手動設定輸出的欄位，樣子會長的像這樣&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/javascript-transform/javascript-transform-4.png&#34; alt=&#34;ETL JavaScript Transform 轉換資料&#34;&gt;&lt;/p&gt;
+&lt;p&gt;這樣就完成了使用 JavaScript 做資料的轉換，當自己會寫 JavaScript 語法，可以自己做資料轉換的程式撰寫&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: Google Cloud Storage (GCS)</title>
       <link>https://gcp-for-newbie.kejyun.com/docs/google-cloud-storage/</link>
       <pubDate>Mon, 03 May 2021 08:50:29 +0800</pubDate>
@@ -1074,6 +1420,100 @@ Process &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;8844&lt;/span
       <pubDate>Mon, 03 May 2021 08:50:29 +0800</pubDate>
       
       <guid>https://gcp-for-newbie.kejyun.com/docs/apis-services/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: ETL: Data Fusion</title>
+      <link>https://gcp-for-newbie.kejyun.com/docs/etl/data-fusion/</link>
+      <pubDate>Sat, 15 May 2021 08:50:29 +0800</pubDate>
+      
+      <guid>https://gcp-for-newbie.kejyun.com/docs/etl/data-fusion/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;plugin-套件&#34;&gt;Plugin 套件&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;類別&lt;/th&gt;
+&lt;th&gt;簡述&lt;/th&gt;
+&lt;th&gt;說明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Sources&lt;/td&gt;
+&lt;td&gt;資料來源&lt;/td&gt;
+&lt;td&gt;解析的資料來源，e.g. &lt;code&gt;DB&lt;/code&gt;、&lt;code&gt;檔案&lt;/code&gt;、&lt;code&gt;串流資料&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Transforms&lt;/td&gt;
+&lt;td&gt;資料轉換&lt;/td&gt;
+&lt;td&gt;將資料來源做格式型別等等轉換&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Analytics&lt;/td&gt;
+&lt;td&gt;資料分析&lt;/td&gt;
+&lt;td&gt;將資料來源做 join, group by 分析運算&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Actions&lt;/td&gt;
+&lt;td&gt;自訂動作&lt;/td&gt;
+&lt;td&gt;在取得 &lt;code&gt;Source 資料來源&lt;/code&gt; 前，先對資料做操作處理，但不會將資料丟給 &lt;code&gt;Source 資料來源&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Sinks&lt;/td&gt;
+&lt;td&gt;資料儲存&lt;/td&gt;
+&lt;td&gt;資料處理過後最後儲存的地方，可以是 &lt;code&gt;DB&lt;/code&gt;、&lt;code&gt;檔案&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Error collectors&lt;/td&gt;
+&lt;td&gt;錯誤搜集&lt;/td&gt;
+&lt;td&gt;資料處理發生錯誤時的錯誤紀錄&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;transform-資料轉換&#34;&gt;Transform 資料轉換&lt;/h2&gt;
+&lt;h3 id=&#34;wrangle&#34;&gt;Wrangle&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A interactive tool for data cleansing and transformation.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;參考資料&#34;&gt;參考資料&lt;/h2&gt;
+&lt;h3 id=&#34;教學影片&#34;&gt;教學影片&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=1QhJDsYQTfM&#34;&gt;QwikQuest with Data Fusion - Building Batch Pipelines in Cloud Data Fusion - YouTube&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://google.qwiklabs.com/focuses/12363?parent=catalog&#34;&gt;Building Batch Pipelines in Cloud Data Fusion | Qwiklabs&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;文件&#34;&gt;文件&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://cloud.google.com/data-fusion/docs/tutorials&#34;&gt;Tutorials  |  Cloud Data Fusion 說明文件  |  Google Cloud&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;官方&#34;&gt;官方&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://cloud.google.com/data-fusion&#34;&gt;Cloud Data Fusion  |  Google Cloud&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://cloud.google.com/data-fusion/docs/concepts/overview&#34;&gt;What is Cloud Data Fusion?  |  Cloud Data Fusion 說明文件  |  Google Cloud&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: ETL</title>
+      <link>https://gcp-for-newbie.kejyun.com/docs/etl/</link>
+      <pubDate>Sat, 15 May 2021 08:50:29 +0800</pubDate>
+      
+      <guid>https://gcp-for-newbie.kejyun.com/docs/etl/</guid>
       <description>
         
         

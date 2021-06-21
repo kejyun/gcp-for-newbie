@@ -7,6 +7,11 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://gcp-for-newbie.kejyun.com/docs/etl/data-fusion/install-postgresql-database/</loc>
+    <lastmod>2021-06-18T08:50:29+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://gcp-for-newbie.kejyun.com/docs/google-cloud-sql/mysql/</loc>
     <lastmod>2021-05-03T08:50:29+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -72,6 +77,11 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://gcp-for-newbie.kejyun.com/docs/etl/data-fusion/sink-source-to-postgresql/</loc>
+    <lastmod>2021-06-21T08:50:29+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://gcp-for-newbie.kejyun.com/docs/google-compute-engine/load-balancer/http-301-to-https/</loc>
     <lastmod>2021-05-03T08:50:29+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -102,6 +112,11 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://gcp-for-newbie.kejyun.com/docs/etl/data-fusion/join-source/</loc>
+    <lastmod>2021-06-21T08:50:29+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://gcp-for-newbie.kejyun.com/docs/gcloud/</loc>
     <lastmod>2021-05-03T08:50:29+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -109,6 +124,11 @@
   </url><url>
     <loc>https://gcp-for-newbie.kejyun.com/docs/google-compute-engine/</loc>
     <lastmod>2021-05-03T08:50:29+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://gcp-for-newbie.kejyun.com/docs/etl/data-fusion/javascript-transform/</loc>
+    <lastmod>2021-06-21T08:50:29+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -142,6 +162,16 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://gcp-for-newbie.kejyun.com/docs/etl/data-fusion/</loc>
+    <lastmod>2021-05-15T08:50:29+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://gcp-for-newbie.kejyun.com/docs/etl/</loc>
+    <lastmod>2021-05-15T08:50:29+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://gcp-for-newbie.kejyun.com/docs/g-suite/</loc>
     <lastmod>2021-05-03T08:50:29+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -163,7 +193,137 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://gcp-for-newbie.kejyun.com/</loc>
-    <lastmod>2021-05-03T08:50:29+08:00</lastmod>
+    <lastmod>2021-06-21T08:50:29+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://gcp-for-newbie.kejyun.com/categories/</loc>
+    <lastmod>2021-06-21T08:50:29+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://gcp-for-newbie.kejyun.com/tags/data-fusion/</loc>
+    <lastmod>2021-06-21T08:50:29+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://gcp-for-newbie.kejyun.com/categories/data-fusion/</loc>
+    <lastmod>2021-06-21T08:50:29+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://gcp-for-newbie.kejyun.com/tags/etl/</loc>
+    <lastmod>2021-06-21T08:50:29+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://gcp-for-newbie.kejyun.com/categories/etl/</loc>
+    <lastmod>2021-06-21T08:50:29+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://gcp-for-newbie.kejyun.com/tags/gcp/</loc>
+    <lastmod>2021-06-21T08:50:29+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://gcp-for-newbie.kejyun.com/categories/gcp/</loc>
+    <lastmod>2021-06-21T08:50:29+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://gcp-for-newbie.kejyun.com/tags/google-cloud-platform/</loc>
+    <lastmod>2021-06-21T08:50:29+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://gcp-for-newbie.kejyun.com/categories/google-cloud-platform/</loc>
+    <lastmod>2021-06-21T08:50:29+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://gcp-for-newbie.kejyun.com/tags/javascript-transform/</loc>
+    <lastmod>2021-06-21T08:50:29+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://gcp-for-newbie.kejyun.com/categories/javascript-transform/</loc>
+    <lastmod>2021-06-21T08:50:29+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://gcp-for-newbie.kejyun.com/tags/javascript-%E8%BD%89%E6%8F%9B%E8%B3%87%E6%96%99-transform/</loc>
+    <lastmod>2021-06-21T08:50:29+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://gcp-for-newbie.kejyun.com/categories/javascript-%E8%BD%89%E6%8F%9B%E8%B3%87%E6%96%99-transform/</loc>
+    <lastmod>2021-06-21T08:50:29+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://gcp-for-newbie.kejyun.com/tags/join-%E8%B3%87%E6%96%99%E4%BE%86%E6%BA%90/</loc>
+    <lastmod>2021-06-21T08:50:29+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://gcp-for-newbie.kejyun.com/categories/join-%E8%B3%87%E6%96%99%E4%BE%86%E6%BA%90/</loc>
+    <lastmod>2021-06-21T08:50:29+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://gcp-for-newbie.kejyun.com/tags/joiner/</loc>
+    <lastmod>2021-06-21T08:50:29+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://gcp-for-newbie.kejyun.com/categories/joiner/</loc>
+    <lastmod>2021-06-21T08:50:29+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://gcp-for-newbie.kejyun.com/tags/</loc>
+    <lastmod>2021-06-21T08:50:29+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://gcp-for-newbie.kejyun.com/tags/%E6%95%99%E5%AD%B8%E6%96%87%E4%BB%B6/</loc>
+    <lastmod>2021-06-21T08:50:29+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://gcp-for-newbie.kejyun.com/categories/%E6%95%99%E5%AD%B8%E6%96%87%E4%BB%B6/</loc>
+    <lastmod>2021-06-21T08:50:29+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://gcp-for-newbie.kejyun.com/tags/%E6%96%B0%E6%89%8B%E6%95%99%E5%AD%B8/</loc>
+    <lastmod>2021-06-21T08:50:29+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://gcp-for-newbie.kejyun.com/categories/%E6%96%B0%E6%89%8B%E6%95%99%E5%AD%B8/</loc>
+    <lastmod>2021-06-21T08:50:29+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://gcp-for-newbie.kejyun.com/tags/%E8%BD%89%E6%8F%9B%E8%B3%87%E6%96%99%E8%87%B3-postgresql/</loc>
+    <lastmod>2021-06-21T08:50:29+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://gcp-for-newbie.kejyun.com/categories/%E8%BD%89%E6%8F%9B%E8%B3%87%E6%96%99%E8%87%B3-postgresql/</loc>
+    <lastmod>2021-06-21T08:50:29+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://gcp-for-newbie.kejyun.com/tags/%E5%AE%89%E8%A3%9D-postgresql-driver/</loc>
+    <lastmod>2021-06-18T08:50:29+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://gcp-for-newbie.kejyun.com/categories/%E5%AE%89%E8%A3%9D-postgresql-driver/</loc>
+    <lastmod>2021-06-18T08:50:29+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -183,11 +343,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://gcp-for-newbie.kejyun.com/categories/auto-scaling/</loc>
-    <lastmod>2021-05-03T08:50:29+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://gcp-for-newbie.kejyun.com/categories/</loc>
     <lastmod>2021-05-03T08:50:29+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -262,16 +417,6 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://gcp-for-newbie.kejyun.com/tags/gcp/</loc>
-    <lastmod>2021-05-03T08:50:29+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://gcp-for-newbie.kejyun.com/categories/gcp/</loc>
-    <lastmod>2021-05-03T08:50:29+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://gcp-for-newbie.kejyun.com/tags/gcs/</loc>
     <lastmod>2021-05-03T08:50:29+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -288,16 +433,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://gcp-for-newbie.kejyun.com/categories/google-cloud-memorystore/</loc>
-    <lastmod>2021-05-03T08:50:29+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://gcp-for-newbie.kejyun.com/tags/google-cloud-platform/</loc>
-    <lastmod>2021-05-03T08:50:29+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://gcp-for-newbie.kejyun.com/categories/google-cloud-platform/</loc>
     <lastmod>2021-05-03T08:50:29+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -402,11 +537,6 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://gcp-for-newbie.kejyun.com/tags/</loc>
-    <lastmod>2021-05-03T08:50:29+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://gcp-for-newbie.kejyun.com/tags/vm-instances/</loc>
     <lastmod>2021-05-03T08:50:29+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -473,26 +603,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://gcp-for-newbie.kejyun.com/categories/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4%E6%B8%AC%E8%A9%A6/</loc>
-    <lastmod>2021-05-03T08:50:29+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://gcp-for-newbie.kejyun.com/tags/%E6%95%99%E5%AD%B8%E6%96%87%E4%BB%B6/</loc>
-    <lastmod>2021-05-03T08:50:29+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://gcp-for-newbie.kejyun.com/categories/%E6%95%99%E5%AD%B8%E6%96%87%E4%BB%B6/</loc>
-    <lastmod>2021-05-03T08:50:29+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://gcp-for-newbie.kejyun.com/tags/%E6%96%B0%E6%89%8B%E6%95%99%E5%AD%B8/</loc>
-    <lastmod>2021-05-03T08:50:29+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://gcp-for-newbie.kejyun.com/categories/%E6%96%B0%E6%89%8B%E6%95%99%E5%AD%B8/</loc>
     <lastmod>2021-05-03T08:50:29+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

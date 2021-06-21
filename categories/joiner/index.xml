@@ -1,0 +1,67 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GCP 菜雞修煉場 – Joiner</title>
+    <link>https://gcp-for-newbie.kejyun.com/categories/joiner/</link>
+    <description>Recent content in Joiner on GCP 菜雞修煉場</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Mon, 21 Jun 2021 08:50:29 +0800</lastBuildDate>
+    
+	  <atom:link href="https://gcp-for-newbie.kejyun.com/categories/joiner/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: ETL: Data Fusion Join 資料來源</title>
+      <link>https://gcp-for-newbie.kejyun.com/docs/etl/data-fusion/join-source/</link>
+      <pubDate>Mon, 21 Jun 2021 08:50:29 +0800</pubDate>
+      
+      <guid>https://gcp-for-newbie.kejyun.com/docs/etl/data-fusion/join-source/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Data Fusion 可以針對不同的資料來源去進行 Join&lt;/p&gt;
+&lt;h2 id=&#34;加入-join-分析&#34;&gt;加入 Join 分析&lt;/h2&gt;
+&lt;p&gt;在左側選單點選 &lt;code&gt;Analytics&lt;/code&gt; 頁籤，並點選 &lt;code&gt;Joiner&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/join-source/etl-join-analytics-1.png&#34; alt=&#34;ETL join source&#34;&gt;&lt;/p&gt;
+&lt;p&gt;將多個 &lt;code&gt;Wrangler&lt;/code&gt; 處理過後的資料連結至 &lt;code&gt;Joiner&lt;/code&gt;，並將 &lt;code&gt;Joiner&lt;/code&gt; 處理後的結果連結至 &lt;code&gt;Sink 資料庫&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/join-source/etl-join-analytics-2.png&#34; alt=&#34;ETL join source&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;設定-joiner&#34;&gt;設定 &lt;code&gt;Joiner&lt;/code&gt;&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;類別&lt;/th&gt;
+&lt;th&gt;簡述&lt;/th&gt;
+&lt;th&gt;說明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Fields&lt;/td&gt;
+&lt;td&gt;來源名稱&lt;/td&gt;
+&lt;td&gt;Join 的資料從哪裡來&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Join Type&lt;/td&gt;
+&lt;td&gt;Join 類型&lt;/td&gt;
+&lt;td&gt;支援 inner 及 outer join&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Join Condition&lt;/td&gt;
+&lt;td&gt;Join 條件&lt;/td&gt;
+&lt;td&gt;要 join 哪些欄位&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;img src=&#34;../images/join-source/etl-join-analytics-3.png&#34; alt=&#34;ETL join source&#34;&gt;&lt;/p&gt;
+&lt;p&gt;設定完成後就可以將不同來源的資料 Join 起來並 ETL 轉換至 Sink 資料庫&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

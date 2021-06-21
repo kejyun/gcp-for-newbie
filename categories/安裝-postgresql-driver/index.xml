@@ -1,0 +1,58 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GCP 菜雞修煉場 – 安裝 PostgreSQL Driver</title>
+    <link>https://gcp-for-newbie.kejyun.com/categories/%E5%AE%89%E8%A3%9D-postgresql-driver/</link>
+    <description>Recent content in 安裝 PostgreSQL Driver on GCP 菜雞修煉場</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Fri, 18 Jun 2021 08:50:29 +0800</lastBuildDate>
+    
+	  <atom:link href="https://gcp-for-newbie.kejyun.com/categories/%E5%AE%89%E8%A3%9D-postgresql-driver/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: ETL: Data Fusion 安裝 PostgreSQL Driver</title>
+      <link>https://gcp-for-newbie.kejyun.com/docs/etl/data-fusion/install-postgresql-database/</link>
+      <pubDate>Fri, 18 Jun 2021 08:50:29 +0800</pubDate>
+      
+      <guid>https://gcp-for-newbie.kejyun.com/docs/etl/data-fusion/install-postgresql-database/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;簡述&#34;&gt;簡述&lt;/h2&gt;
+&lt;p&gt;GCP 的 Data Fusion 資料庫連線有支援跨雲端，所以若資料庫不是放在 GCP 的話，像是 AWS、Azure 之類的雲端服務，也都可以順利連線&lt;/p&gt;
+&lt;h2 id=&#34;加入資料庫連練線&#34;&gt;加入資料庫連練線&lt;/h2&gt;
+&lt;p&gt;在 Cloud Data Fusion 首頁選擇 &lt;code&gt;Wrangle&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/install-postgresql-database/etl-database-postgresql-1.png&#34; alt=&#34;ETL Install PostgreSQL&#34;&gt;&lt;/p&gt;
+&lt;p&gt;在選擇 &lt;code&gt;Wrangle&lt;/code&gt; 的資料來源中，左下方點選 &lt;code&gt;Add Connection&lt;/code&gt;，並選擇 &lt;code&gt;Database&lt;/code&gt; 選項&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/install-postgresql-database/etl-database-postgresql-2.png&#34; alt=&#34;ETL Install PostgreSQL&#34;&gt;&lt;/p&gt;
+&lt;p&gt;在跳出的資料庫選單中，可以選擇 &lt;code&gt;PostgreSQL (v7.0 and later)&lt;/code&gt; 下方的 &lt;code&gt;Hub&lt;/code&gt; 連結去安裝 Cloud Data Fusion 的驅動程式&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;若是 6.x 以前的版本則是需要自行上傳 driver&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;../images/install-postgresql-database/etl-database-postgresql-3.png&#34; alt=&#34;ETL Install PostgreSQL&#34;&gt;&lt;/p&gt;
+&lt;p&gt;安裝完後會看到 Driver 會顯示已經安裝完成 &lt;code&gt;Installed&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/install-postgresql-database/etl-database-postgresql-4.png&#34; alt=&#34;ETL Install PostgreSQL&#34;&gt;&lt;/p&gt;
+&lt;p&gt;點選 &lt;code&gt;PostgreSQL (v7.0 and later)&lt;/code&gt;，輸入連線的帳號密碼及相關連線資訊後，點選 &lt;code&gt;Add Connection&lt;/code&gt; 就可以加入此資料庫連線&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;也可以點選 &lt;code&gt;Advanced&lt;/code&gt; 看看進階設定是用 jdbc 連線方式&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;../images/install-postgresql-database/etl-database-postgresql-5-1.png&#34; alt=&#34;ETL Install PostgreSQL&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/install-postgresql-database/etl-database-postgresql-5-2.png&#34; alt=&#34;ETL Install PostgreSQL&#34;&gt;&lt;/p&gt;
+&lt;p&gt;加入連線完成後，就可以看到在左側 &lt;code&gt;Database&lt;/code&gt; 頁籤看到此資料庫了，點選後就可以在右側看到資料庫的相關資料表了&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/install-postgresql-database/etl-database-postgresql-6.png&#34; alt=&#34;ETL Install PostgreSQL&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;參考資料&#34;&gt;參考資料&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://cloud.google.com/data-fusion/docs/how-to/reading-from-postgresql&#34;&gt;Reading from a PostgreSQL database  |  Cloud Data Fusion  |  Google Cloud&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
